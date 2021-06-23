@@ -1,0 +1,38 @@
+<div class="container-fluid ap-section-giving-01" style="background-color: {{ section.settings.ap_bg_color }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>
+          {{ section.settings.ap_cntnt }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Section Giving 01",
+    "settings": [
+	{
+      "type": "color",
+      "id": "ap_bg_color",
+      "label": "Background Color"	
+    },
+    {
+      "type": "textarea",
+      "id": "ap_cntnt",
+      "label": "Title"
+    }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

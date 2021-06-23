@@ -1,0 +1,2364 @@
+{
+  "current": {
+    "background-color": "#ffffff",
+    "body-text-color": "#51595d",
+    "accent-color": "#b69574",
+    "heading-color": "#51595d",
+    "border-color": "#d7dcde",
+    "primary-button-color": "#ffffff",
+    "header-link-color": "#ffffff",
+    "header-dropdown-color": "#b99877",
+    "form-select-background": "#ffffff",
+    "form-select-color": "#51595d",
+    "form-select-border-color": "#d7dcde",
+    "footer-background-color": "#19252b",
+    "footer-header-color": "#ffffff",
+    "footer-accent-color": "#ffffff",
+    "body_background_image": "",
+    "contrast_background_image": "",
+    "footer_background_image": "",
+    "font_body": "avenir_next_n4",
+    "font_logo": "roboto_n4",
+    "font_logo_capitalize": true,
+    "font_heading": "roboto_n4",
+    "font_heading_capitalize": false,
+    "font_section_heading_bold": false,
+    "font_section_heading_capitalize": true,
+    "font_meta_bold": true,
+    "font_meta_capitalize": false,
+    "font_button": "roboto_n4",
+    "font_button_capitalize": true,
+    "breadcrumbs_enable": false,
+    "product_show_vendor": false,
+    "product_stock_overlay": false,
+    "product_stock_overlay_show": 5,
+    "social_default_image": "",
+    "social_facebook_url": "",
+    "social_twitter_url": "",
+    "social_pinterest_url": "",
+    "social_instagram_url": "",
+    "social_vimeo_url": "",
+    "social_youtube_url": "",
+    "social_rss_url": "",
+    "favicon": "shopify:\/\/shop_images\/Anydaycasual-icon-brown.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Anydaycasual-logo-brown.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "header-show-breadcrumbs": false,
+    "contrast-background-color": "#FAF7F6",
+    "error-color": "#B84949",
+    "meta-color": "#b7aba3",
+    "sections": {
+      "module-product": {
+        "type": "module-product",
+        "blocks": {
+          "6d152a52-b054-434a-ac44-84633cf5aa0b": {
+            "type": "symbol-section",
+            "settings": {
+              "symbol_icon": "shopify:\/\/shop_images\/Fair_Living_Wages_Black_Icon_1_1.png",
+              "ap_hdng_block": "<p>Fair Living Wages<\/p>"
+            }
+          },
+          "991aa453-1573-490b-b51a-9305afa7f608": {
+            "type": "symbol-section",
+            "settings": {
+              "symbol_icon": "shopify:\/\/shop_images\/Factory_Icon_08d6558e-e4ae-4853-9e64-a1e7567f1ddb.png",
+              "ap_hdng_block": "<p>Sustainable &amp; Ethical Manufacturers<\/p>"
+            }
+          },
+          "26e632a4-94d5-4aa2-af9a-4b8fc1ed64c1": {
+            "type": "symbol-section",
+            "settings": {
+              "symbol_icon": "shopify:\/\/shop_images\/fta_icon_text_black-01.png",
+              "ap_hdng_block": "<p>A Portion Of Each White Shirt Sales Will Help Support The <a href=\"https:\/\/fashiontakesaction.com\/\" title=\"https:\/\/fashiontakesaction.com\/\">Fashion Takes Action<\/a> Project<\/p>"
+            }
+          },
+          "9292ee1f-1a55-4f9a-a866-7c3a493116f2": {
+            "type": "symbol-section",
+            "settings": {
+              "symbol_icon": "shopify:\/\/shop_images\/te_text_black-01.png",
+              "ap_hdng_block": "<p>A Portion Of Each Black Shirt Sales Will Help Support The <a href=\"http:\/\/textileexchange.org\/\" title=\"http:\/\/textileexchange.org\" target=\"_blank\">Textile Exchange<\/a> Project<\/p>"
+            }
+          },
+          "ecca68dc-7a26-4309-843a-39db944f07de": {
+            "type": "symbol-section",
+            "settings": {
+              "symbol_icon": "shopify:\/\/shop_images\/fair_trade_black-01.png",
+              "ap_hdng_block": "<p>A Portion Of Each Birch Shirt Sales Will Help Support The <a href=\"https:\/\/www.fairtradecertified.org\/\" title=\"https:\/\/www.fairtradecertified.org\/\">Fair Trade USA<\/a> Project<\/p>"
+            }
+          },
+          "116d6479-79d8-42ee-892c-e42d82264374": {
+            "type": "additional_info",
+            "settings": {
+              "info_text": "",
+              "info_icon": "info"
+            }
+          },
+          "b0ae1f21-976f-486e-b3b3-7a7708a4da7a": {
+            "type": "tab-section",
+            "settings": {
+              "tab-hding": "Size Guide",
+              "tab-data": "The SilkStretch™  T-Shirt is tailored in the right places but not too slim. Runs true to size, but order a size up if in-between sizes."
+            }
+          },
+          "938ce819-2667-4b44-8c1b-02b0c5229b69": {
+            "type": "tab-section",
+            "settings": {
+              "tab-hding": "SilkStretch™ Knitted Fabric",
+              "tab-data": "Our custom knitted fabric combines an interlock knit with some added features that give each garment a buttery soft feel, and enough stretch in all of the right places to be worn working from home, a night out, or even lounging on Sunday!"
+            }
+          },
+          "130b2024-26fe-4345-9a66-10f0376f6ec7": {
+            "type": "tab-section",
+            "settings": {
+              "tab-hding": "Designed In Milwaukee",
+              "tab-data": "Each of our garments are designed and shipped out of Milwaukee, WI"
+            }
+          },
+          "b5e5e3e8-79a7-4c19-ad37-c0abad16ca1c": {
+            "type": "tab-section",
+            "settings": {
+              "tab-hding": "Why We Made This",
+              "tab-data": "T-shirts are a staple for our day to day lifestyle, but nothing was ever sustainable and stylish to be worn anyday of the week. We designed the SilkStretch™ T-Shirt with a whole new level of softness and versatility."
+            }
+          },
+          "5cad3eac-f87c-4348-a801-487c5e991096": {
+            "type": "tab-section",
+            "settings": {
+              "tab-hding": "Care Guide",
+              "tab-data": "Wash cold with like colors, tumble dry low."
+            }
+          }
+        },
+        "block_order": [
+          "6d152a52-b054-434a-ac44-84633cf5aa0b",
+          "991aa453-1573-490b-b51a-9305afa7f608",
+          "26e632a4-94d5-4aa2-af9a-4b8fc1ed64c1",
+          "9292ee1f-1a55-4f9a-a866-7c3a493116f2",
+          "ecca68dc-7a26-4309-843a-39db944f07de",
+          "116d6479-79d8-42ee-892c-e42d82264374",
+          "b0ae1f21-976f-486e-b3b3-7a7708a4da7a",
+          "938ce819-2667-4b44-8c1b-02b0c5229b69",
+          "130b2024-26fe-4345-9a66-10f0376f6ec7",
+          "b5e5e3e8-79a7-4c19-ad37-c0abad16ca1c",
+          "5cad3eac-f87c-4348-a801-487c5e991096"
+        ],
+        "settings": {
+          "show_spb": false,
+          "product_cart_redirect": true,
+          "center_product_details": true,
+          "product_show_vendor": false,
+          "linked_options": false,
+          "variants_style": "radio",
+          "single_column_product": false,
+          "show_share_buttons": false,
+          "enable_zoom": true,
+          "gallery_enable_video_autoplay": true,
+          "gallery_enable_video_looping": true,
+          "symbol_head_block": "What Your Purchase Supports"
+        }
+      },
+      "home-slideshow": {
+        "type": "home-slideshow",
+        "blocks": {
+          "slide-1": {
+            "type": "slide",
+            "settings": {
+              "image": "",
+              "alignment": "center",
+              "title": "Slideshow",
+              "subtitle": "",
+              "caption": "<p>Introduce customers to your shop with lifestyle imagery and product photography.<\/p>",
+              "button": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "slide-1"
+        ],
+        "settings": {
+          "enable": true,
+          "show_shadows": true,
+          "text_color": "#24254e",
+          "slideshow_layout": "full-bleed",
+          "slideshow_transition": "transition-fade",
+          "autoplay": false,
+          "frequency": 6
+        }
+      },
+      "general-footer": {
+        "type": "general-footer",
+        "settings": {
+          "show_menu_heading": true,
+          "menu_1": "footer",
+          "menu_2": "footer",
+          "show_social_buttons": false,
+          "social_heading": "Social links",
+          "show_share_buttons": true,
+          "sharing_heading": "Help us spread the word!",
+          "sharing_description": "Please help us spread the news about our awesome products.",
+          "enable_twitter": true,
+          "enable_facebook": true,
+          "enable_pinterest": true,
+          "enable_fancy": true,
+          "show_payment_icons": false,
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "general-header": {
+        "type": "general-header",
+        "settings": {
+          "header_sticky": true,
+          "show_cart": true,
+          "show_search": true,
+          "header_logo": "shopify:\/\/shop_images\/AnydayCasual_logo_trans.png",
+          "menu": "main-menu",
+          "menu_style": "below-header",
+          "color_override": "default",
+          "show_promotion": true,
+          "promotion_home_only": false,
+          "promotion_style": "standard-style",
+          "promotion_text": "Free U.S Shipping & Returns Over $80 | Free International Shipping Over $120"
+        }
+      },
+      "ap-heading-section": {
+        "type": "ap-heading-section",
+        "settings": {
+          "main_title": "The AnydayCasual Difference",
+          "left_sec_hdng": "Typical Brands",
+          "left_sec_List": "<li>Color Selection<\/li>\n<li>Variety of sizes<\/li>\n<li>Ethical Manufacturers<\/li>\n<li>American grown Fabrics<\/li>\n<li>Fair Labor<\/li>\n<li>Fair Trade<\/li>\n<li>Custom Knitting Process<\/li>\n<li>100% Natural Fibers<\/li>",
+          "right_sec_hdng": "AnydayCasual",
+          "right_sec_List": "<li>Color Selection<\/li>\n<li>Variety of sizes<\/li>\n<li>Ethical Manufacturers<\/li>\n<li>American grown Fabrics<\/li>\n<li>Fair Labor<\/li>\n<li>Fair Trade<\/li>\n<li>Custom Knitting Process<\/li>\n<li>100% Natural Fibers<\/li>"
+        }
+      },
+      "ap-grid-section": {
+        "type": "ap-grid-section",
+        "blocks": {
+          "1597832142107": {
+            "type": "item",
+            "settings": {
+              "grid_image": "shopify:\/\/shop_images\/700x500_6.png",
+              "ap_hdng": "Clothing",
+              "ap_short_info": "We use 100% natural fibers and our signature SilkStretch™ knitting process to ensure soft, durable, and long lasting garments",
+              "ap_point_01": "Buttery soft SilkStretch™ knitting process",
+              "ap_point_01_Icon": "shopify:\/\/shop_images\/fabric.png",
+              "ap_point_02": "100% American Pima Cotton",
+              "ap_point_02_Icon": "shopify:\/\/shop_images\/TX5KTP_2.jpg"
+            }
+          },
+          "1597832236936": {
+            "type": "item",
+            "settings": {
+              "grid_image": "shopify:\/\/shop_images\/Happy_Clothing_Factory_Symbol.jpg",
+              "ap_hdng": "Ethical Manufacturers",
+              "ap_short_info": "Our manufacturers focus on every aspect of their business from their people down to their end product. Ensuring good health for all involved",
+              "ap_point_01": "Fair Trade Factories",
+              "ap_point_01_Icon": "shopify:\/\/shop_images\/Factory_Icon_61fdf71a-a752-455b-b910-d0c6da26c809.png",
+              "ap_point_02": "Fair Living Wages",
+              "ap_point_02_Icon": "shopify:\/\/shop_images\/Fair_Living_Wages_Black_Icon_7c07412f-3f8a-40db-a8e9-6b9901c30fac.png"
+            }
+          },
+          "1597832280421": {
+            "type": "item",
+            "settings": {
+              "grid_image": "shopify:\/\/shop_images\/1190714189591710.qIlLdOwmot3paEKNeEhw_height640.png",
+              "ap_hdng": "Shipping",
+              "ap_short_info": "For a reduced carbon footprint each package is walked or biked over to the post office",
+              "ap_point_01": "Reduced Carbon Emissions",
+              "ap_point_01_Icon": "shopify:\/\/shop_images\/co2.png",
+              "ap_point_02": "Shipped using existing postal routes",
+              "ap_point_02_Icon": "shopify:\/\/shop_images\/delivery.png"
+            }
+          },
+          "1597829542350": {
+            "type": "item",
+            "settings": {
+              "grid_image": "shopify:\/\/shop_images\/Untitled-_packaging_image.png",
+              "ap_hdng": "Packaging",
+              "ap_short_info": "100% recycled ocean plastic polymailers, and compostable garment bags",
+              "ap_point_01": "100% recyclable",
+              "ap_point_01_Icon": "shopify:\/\/shop_images\/recycling.png",
+              "ap_point_02": "100% reusable",
+              "ap_point_02_Icon": "shopify:\/\/shop_images\/hand.png"
+            }
+          }
+        },
+        "block_order": [
+          "1597832142107",
+          "1597832236936",
+          "1597832280421",
+          "1597829542350"
+        ],
+        "settings": {
+          "grid_head_image": "shopify:\/\/shop_images\/sustainability_d.png",
+          "grid_head_text": "Sustainability",
+          "grid_caption": "We use 100% natural fibers and our signature SilkStretch™ knitting process to ensure soft, durable, and long-lasting garments",
+          "grid_heading": "The AnydayCasual Difference"
+        }
+      },
+      "ap-newsletter-section": {
+        "type": "ap-newsletter-section",
+        "settings": {
+          "nl_title": "Let’s keep it casual",
+          "nl_caption": "Drop your email below for style tips, discounts, giveaways and new product launches!",
+          "nl_bg_color": "#b89775"
+        }
+      },
+      "ap-oceans-section": {
+        "type": "ap-oceans-section",
+        "settings": {}
+      },
+      "ap-footer": {
+        "type": "ap-footer",
+        "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/AnydayCasual_logo_trans.png",
+          "social_facebook": "https:\/\/www.facebook.com\/anydaycasual\/?modal=admin_todo_tour",
+          "social_twitter": "",
+          "social_instagram": "https:\/\/www.instagram.com\/anydaycasual\/",
+          "social_linkedin": "",
+          "social_pinterest": "",
+          "show_menu_heading": true,
+          "menu_1": "about-us",
+          "menu_2": "shop",
+          "menu_3": "need-help",
+          "partner_one": "shopify:\/\/shop_images\/1ftp_BusinessMember_Horizontal_Black_1.png",
+          "ap_email": "hello@anydaycasual.com"
+        }
+      },
+      "ap-fabric-section-01": {
+        "type": "ap-fabric-section-01",
+        "settings": {
+          "ap_banner": "shopify:\/\/shop_images\/FABRIC_TECHNOLOGY_HEADER_1.jpg"
+        }
+      },
+      "ap-fabric-section-02": {
+        "type": "ap-fabric-section-02",
+        "settings": {
+          "icon_name_01": "SilkStretch™ Fabric",
+          "ap_icon_01": "shopify:\/\/shop_images\/fabric.png",
+          "icon_name_02": "4-Way SilkStretch™",
+          "ap_icon_02": "shopify:\/\/shop_images\/IMG_9727_1.png",
+          "icon_name_03": "Breathable",
+          "ap_icon_03": "shopify:\/\/shop_images\/2_1.png",
+          "icon_name_04": "Buttery  Soft",
+          "ap_icon_04": "shopify:\/\/shop_images\/2.png",
+          "ap_cnt_hdng": "Superior comfort begins with innovative fabric processes",
+          "ap_txt_cnt": "<p>We produce our garments with the world’s best sustainable fabrics, and finish them off with our premium SilkStretch™ knitting process to ensure each garment has limitless stretch and a silky soft feel.<\/p>"
+        }
+      },
+      "ap-fabric-section-03": {
+        "type": "ap-fabric-section-03",
+        "settings": {
+          "cntnt_hdng": "SilkStretch™ Knit",
+          "cntnt_desc": "Our SilkStretch™ knit consists of 100% American pima cotton. Designed for durability, versatility, ultimate stretch, and a buttery soft feel you simply won’t want to wear another shirt again.",
+          "btn_name": "Shop SilkStretch™",
+          "btn_url": "https:\/\/www.anydaycasual.com\/collections\/all",
+          "cntnt_img": "shopify:\/\/shop_images\/1190758381210132.SiMsjskLgqjh1sgRk1lB_height640.png"
+        }
+      },
+      "ap-fabric-section-01-copy": {
+        "type": "ap-fabric-section-01-copy",
+        "settings": {
+          "banner_hdng": "Introducing Our SilkStretch™ Shirts",
+          "ap_banner": "shopify:\/\/shop_images\/anyday-casual-new-image_220978b9-46be-4e63-9802-2e7a81a297f1.png"
+        }
+      },
+      "template-blog": {
+        "type": "template-blog",
+        "settings": {
+          "layout": "grid",
+          "show_rss_icon": false,
+          "show_tags": false,
+          "show_share_buttons": false,
+          "show_featured_image": true,
+          "show_author": false,
+          "show_comment_count": false
+        }
+      },
+      "ap-faq": {
+        "type": "ap-faq",
+        "blocks": {
+          "1598619623121": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "What is your return policy?",
+              "ap_subHdng": "AnydayCasual has a 30-day Easy Returns window for all clothing items. If you are not satisfied with your order we offer returns within 30 days from when your purchase was made. We will authorize a return for any item that is in as-new condition, unwashed, and with its original tags intact. Please include your order receipt and write your order # on the return package. Returns after 30 days of purchase will be reviewed and may be subject to a reduced refund. Single Item t-shirt returns have a flat fee of $10 for return shipping. Bundle returns may vary based on return postage cost. Exchanges may be completed free of charge.To initiate a return or exchange please contact hello@anydaycasual.com Refunds are typically issued within 5-10 days from the date of your return shipment. To greatly expedite the processing time of your return please notify our support team at hello@anydaycasual.com immediately after your return package has been placed in the mail. In this email include your order #, reason for return and confirmation of shipment (return tracking #).*We cannot reimburse return shipping or handling charges.**Please note that items purchased during special promotional periods or closeout sales are not eligible for refund. Exchanges may still be completed for promotional sale items. Please reach out to our support team at hello@anydaycasual.com to see if your purchase is eligible."
+            }
+          },
+          "1598619626119": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Do you offer free exchanges?",
+              "ap_subHdng": "Yes! We offer exchanges for a different size and color in the same style! We will authorize an exchange for items that are in as-new condition, unwashed, and with their original tags intact. Please include your original order receipt with your exchange shipment. t-shirt bundles have a separate exchange process. To initiate a free exchange for a t-shirt bundle, please contact hello@anydaycasual.com return or exchange online: Visit our Returns Page. You can either print a shipping label and drop off at the carriers listed on the label (USPS or FedEx). You will receive an email when your return is received and your refund has been processed."
+            }
+          },
+          "1598620596160": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Does AnydayCasual ship internationally?",
+              "ap_subHdng": "Yes! Please note we can not control and are not responsible for any duties\/taxes applied to your package. Customs policies vary by country; please contact your local customs office for more information."
+            }
+          },
+          "1598629424321": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Do you offer any discounts?",
+              "ap_subHdng": "Only one code promotion can be applied to each order. During a site-wide sale, all the code promotions are disabled."
+            }
+          },
+          "1598629445833": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Are there special care instructions for AnydayCasual garments?",
+              "ap_subHdng": "To ensure that each piece retains that fresh out-of-the-pack look and feel, please follow the care instructions on the backside hem of each garment. We recommend machine washing cold and following up with hang drying."
+            }
+          },
+          "1598629465709": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "What do I do if my order is incorrect or damaged?",
+              "ap_subHdng": "Please email hello@anydaycasual.com if the order you received was damaged or incorrect. We are passionate about our products and would love to help you out."
+            }
+          },
+          "1598629484564": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "When will my order ship?",
+              "ap_subHdng": "Typically, orders ship within 24 hours of purchase. Please allow 5-7 business days for standard shipping. Expedited shipping options are available with either 2 or 3-day shipping (selected during checkout). Orders placed after 1 pm on Friday may not ship until Monday morning."
+            }
+          },
+          "1598629511160": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Where does AnydayCasual ship from?",
+              "ap_subHdng": "All of our orders are processed and shipped from Milwaukee, Wisconsin."
+            }
+          },
+          "1598629528207": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Can I change my order after I place it?",
+              "ap_subHdng": "Can I change my order after I place it?\nOnce an order has been placed it cannot be updated, this includes updates to shipping address, size, color, or style changes."
+            }
+          },
+          "1598629545373": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "My order says it was delivered but I didn’t receive it",
+              "ap_subHdng": "We know these things can be frustrating. Sometimes the carrier marks the package as \"Delivered\" prematurely. If you give it 3-5 business days, oftentimes the package will turn up. It's also helpful to ask your neighbors if the package was accidentally delivered to them. If there is still no trace of your delivery please contact your local post office, not the carrier hotline. The local post office will be able to provide you with details surrounding the delivery because they are given responsibility for the package once we have handed it to them for delivery. If the postal service is unable to assist you please contact us at hello@anydaycasual.com for additional support."
+            }
+          },
+          "1598629574710": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "What fabric does AnydayCasual use?",
+              "ap_subHdng": "We believe everyday style should have exceptional quality which is why we have developed the best fabrics for you. Our 100% American pima cotton uses our signature Silk Stretch™ process which makes each t-shirt durable, breathable & buttery soft.\n<br> Our clothing is designed for the office, travel, date night, brunch, or simply just lounging in on the weekend. Our buttery soft anti-wrinkle 4-way Silk Stretch™ tailored fabric t-shirts are so comfortable you'll never want to take them off. \n \n<br>Composition: 100% American Silk Stretch Pima Cotton™"
+            }
+          },
+          "1598629639085": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "10% off sign up code",
+              "ap_subHdng": "AnydayCasual offers a 10% off your first order promo code when you sign up for the Weekly Thread newsletter or sms alerts. The 10% off code is only valid on your first AnydayCasual purchase and cannot be combined with any other offers or sales. The code cannot be applied after an order has been placed."
+            }
+          },
+          "1598629658901": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "How do I track the status of my order?",
+              "ap_subHdng": "To check on the status of your order, sign into your account here using the email address and password you used at checkout. After your order has shipped, you will receive a unique link to your order’s live status, where you can watch your shipment in real time."
+            }
+          }
+        },
+        "block_order": [
+          "1598619623121",
+          "1598619626119",
+          "1598620596160",
+          "1598629424321",
+          "1598629445833",
+          "1598629465709",
+          "1598629484564",
+          "1598629511160",
+          "1598629528207",
+          "1598629545373",
+          "1598629574710",
+          "1598629639085",
+          "1598629658901"
+        ],
+        "settings": {
+          "ap_faq_banner": "shopify:\/\/shop_images\/How_Can_We_Help__1.jpg",
+          "banner_hdng": "",
+          "user_mail": "hello@anydaycasual.com"
+        }
+      },
+      "ap-giving-back-banner": {
+        "type": "ap-giving-back-banner",
+        "settings": {
+          "ap_banner": "shopify:\/\/shop_images\/GIVING_BACK_2.jpg",
+          "banner_hdng": "Giving Back To Organizations That Promote Sustainable Fashion Practices!"
+        }
+      },
+      "ap-giving-section-01": {
+        "type": "ap-giving-section-01",
+        "settings": {
+          "ap_bg_color": "#ffffff",
+          "ap_cntnt": "Each product purchased from AnydayCasual helps a different non-profit that is working to end fast fashion! We’re here to help create a healthier planet for generations to come."
+        }
+      },
+      "ap-grid-section-giving": {
+        "type": "ap-grid-section-giving",
+        "settings": {
+          "grid_image": "shopify:\/\/shop_images\/Untitled-1.png",
+          "ap_hdng": "Why 1% For The Planet",
+          "ap_short_info": "You may be asking us why we have chosen to give back to 1% For The Planet, as opposed to any other cause or organization. Our answer is simple…. we are not like most apparel companies out there who make the cheapest goods possible in return for an incredibly high margin. At AnydayCasual, we pay a higher price for sustainable high quality fabrics and fair labor\/fair trade practices to ensure our products last a lifetime over cheap synthetics that destroy our planet. 1% For The Planet, gives us the ability to give back a portion of our profits to  a community of organizations that help fight against fast fashion"
+        }
+      },
+      "ap-grid-section-giving-02": {
+        "type": "ap-grid-section-giving-02",
+        "settings": {
+          "ap_hdng": "Making A Difference",
+          "ap_short_info": "AnydayCasual centers itself around two main principles. The first being, to create sustainable shirts that also look stylish. Secondly, to make a difference in the world we live in, by giving back to charities\/communities that support ending fast fashion."
+        }
+      },
+      "template-article": {
+        "type": "template-article",
+        "settings": {
+          "show_tags": true,
+          "show_author": false,
+          "show_share_buttons": true,
+          "show_full_width_image": false
+        }
+      },
+      "ap-header": {
+        "type": "ap-header",
+        "settings": {
+          "header_sticky": true,
+          "show_cart": true,
+          "show_search": true,
+          "show_top_bar": true,
+          "color_heading": "#b89775",
+          "color_text": "#ffffff",
+          "top_cnt": "BUNDLE ANY 2 OR MORE & SAVE 20% | FREE U.S. SHIPPING ON ALL ORDERS",
+          "menu_left": "left-menu",
+          "menu_right": "right-menu",
+          "logo": "shopify:\/\/shop_images\/AnydayCasual_logo_trans.png"
+        }
+      },
+      "ap-silkstrch-section-01": {
+        "type": "ap-silkstrch-section-01",
+        "settings": {
+          "banner_silk": "shopify:\/\/shop_images\/4_b37756ff-ab97-4c9a-9f4c-a670bb897593.jpg",
+          "ap_banner_silk": "shopify:\/\/shop_images\/anyday-casual-new-image.jpg"
+        }
+      },
+      "ap-silkstrch-02": {
+        "type": "ap-silkstrch-02",
+        "blocks": {
+          "1602834529007": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/300x300.png",
+              "cntnt_hdng_silk": "SilkStretch™ Knit",
+              "cntnt_desc_silk": "Our SilkStretch™️ knit consists of a customized interlock process using 100% American pima cotton. This proprietary process gives each garment a luxurious feel that you simply won’t ever want to take off",
+              "btn_name_silk": "Shop SilkStretch™",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602761112034": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-7.png",
+              "cntnt_hdng_silk": "4 Way SilkStretch™",
+              "cntnt_desc_silk": "Our four-way SilkStretch™ fabric stretches and recovers both width and length wise.",
+              "btn_name_silk": "Shop now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602761250292": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-6.png",
+              "cntnt_hdng_silk": "Buttery Soft",
+              "cntnt_desc_silk": "Our clothing has a buttery soft feel grazing the skin so effortlessly, customers have said it feels like they aren't wearing anything.",
+              "btn_name_silk": "Shop Now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602761331327": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-3.png",
+              "cntnt_hdng_silk": "Curved Hem",
+              "cntnt_desc_silk": "The curved hem allows for a flattering look, regardless of body type or shape.",
+              "btn_name_silk": "Shop Now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602834304358": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-2.png",
+              "cntnt_hdng_silk": "Recovery Collar",
+              "cntnt_desc_silk": "Have you ever experienced a stretched out, bent collar after just a few wears? Our collars are constructed with a recovery fabric that allows them to retain their shape wash after wash.",
+              "btn_name_silk": "Shop Now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602834371403": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-4.png",
+              "cntnt_hdng_silk": "Casual\/Fitted Drape",
+              "cntnt_desc_silk": "Not too long, not too short. Our shirts have the perfect length that’s fitted in all the right places.",
+              "btn_name_silk": "Shop Now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602834404239": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-9.png",
+              "cntnt_hdng_silk": "Breathable",
+              "cntnt_desc_silk": "American Pima Cotton is a breathable fabric that helps you stay cool when temperatures rise.",
+              "btn_name_silk": "Shop Now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          },
+          "1602834429821": {
+            "type": "item",
+            "settings": {
+              "cntnt_img_silk": "shopify:\/\/shop_images\/SECTION-8.png",
+              "cntnt_hdng_silk": "Versatility",
+              "cntnt_desc_silk": "A functional piece for lounging at home, going on a date, or traveling. You won't want to leave this t-shirt behind. This shirt will quickly become a staple in your everyday wardrobe.",
+              "btn_name_silk": "Shop Now",
+              "btn_url_silk": "shopify:\/\/collections\/t-shirt"
+            }
+          }
+        },
+        "block_order": [
+          "1602834529007",
+          "1602761112034",
+          "1602761250292",
+          "1602761331327",
+          "1602834304358",
+          "1602834371403",
+          "1602834404239",
+          "1602834429821"
+        ],
+        "settings": {
+          "banner_silk": "shopify:\/\/shop_images\/3_0264a2ad-189d-45cf-939a-73436c57643c.jpg"
+        }
+      },
+      "ap_checkBoxes_section": {
+        "type": "ap_checkBoxes_section",
+        "blocks": {
+          "aa72a226-1309-480b-8dbe-547eae569c83": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Color Selection",
+              "ap_tradition": true,
+              "ap_anyday": true
+            }
+          },
+          "86efd51a-ff33-4057-a49a-a175bbdcf5a2": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Variety Of Sizes",
+              "ap_tradition": true,
+              "ap_anyday": true
+            }
+          },
+          "97b72170-c74c-4e40-b25e-f918897ebd83": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Ethical Manufacturers",
+              "ap_tradition": false,
+              "ap_anyday": true
+            }
+          },
+          "edea6b48-0e20-47dc-a16a-b3d8a887485e": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "American Grown Fabrics",
+              "ap_tradition": false,
+              "ap_anyday": true
+            }
+          },
+          "20f4bec0-2e0c-4bb1-8a8f-f12a386416f5": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Fair Labor",
+              "ap_tradition": false,
+              "ap_anyday": true
+            }
+          },
+          "7e92a22d-4c25-47d3-8318-475968907400": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Fair Trade",
+              "ap_tradition": false,
+              "ap_anyday": true
+            }
+          },
+          "2fcd82ee-8ff0-4031-a047-dc96de4a11ca": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "Custom Knitting Process",
+              "ap_tradition": false,
+              "ap_anyday": true
+            }
+          },
+          "370208da-39bc-4013-bedd-b14f8522ee62": {
+            "type": "item",
+            "settings": {
+              "ap_hdng": "100% Natural Fibers",
+              "ap_tradition": false,
+              "ap_anyday": true
+            }
+          }
+        },
+        "block_order": [
+          "aa72a226-1309-480b-8dbe-547eae569c83",
+          "86efd51a-ff33-4057-a49a-a175bbdcf5a2",
+          "97b72170-c74c-4e40-b25e-f918897ebd83",
+          "edea6b48-0e20-47dc-a16a-b3d8a887485e",
+          "20f4bec0-2e0c-4bb1-8a8f-f12a386416f5",
+          "7e92a22d-4c25-47d3-8318-475968907400",
+          "2fcd82ee-8ff0-4031-a047-dc96de4a11ca",
+          "370208da-39bc-4013-bedd-b14f8522ee62"
+        ],
+        "settings": {
+          "sct_img": "shopify:\/\/shop_images\/The_AnydayCasual_Differene.jpg"
+        }
+      },
+      "static-product-recommendations": {
+        "type": "static-product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "product_recommendations_heading": "You may also like",
+          "product_limit": 2
+        }
+      },
+      "ap-single-product-reviews": {
+        "type": "ap-single-product-reviews",
+        "blocks": {
+          "0fbda8a3-3403-41c7-a0e2-96ad10d0ca2e": {
+            "type": "item",
+            "settings": {
+              "review_text": "You get what you pay for. These shirts are worth every penny. Cannot wait to order more",
+              "buyer_name": "- Verified Buyer"
+            }
+          },
+          "7c0a3469-e1b7-45bc-b221-1f0e02a22517": {
+            "type": "item",
+            "settings": {
+              "review_text": "My favorite shirts ever! Buttery soft, and perfect for the new normal we all live in",
+              "buyer_name": "- Verified Buyer"
+            }
+          },
+          "69950e1f-a20d-41d7-847f-05064c056c21": {
+            "type": "item",
+            "settings": {
+              "review_text": "10\/10 recommend. Never buying shirts from another company again",
+              "buyer_name": "- Verified Buyer"
+            }
+          },
+          "fcce87a8-d7f6-4593-9b77-35662b3968b8": {
+            "type": "item",
+            "settings": {
+              "review_text": "They need more colors. I already have all 3!",
+              "buyer_name": "- Verified Buyer"
+            }
+          },
+          "28bbd2d5-08d2-4885-a097-22ec42df58a1": {
+            "type": "item",
+            "settings": {
+              "review_text": "Bundles all the way! Most companies don’t do bundles, but this company does it right",
+              "buyer_name": "- Verified Buyer"
+            }
+          }
+        },
+        "block_order": [
+          "0fbda8a3-3403-41c7-a0e2-96ad10d0ca2e",
+          "7c0a3469-e1b7-45bc-b221-1f0e02a22517",
+          "69950e1f-a20d-41d7-847f-05064c056c21",
+          "fcce87a8-d7f6-4593-9b77-35662b3968b8",
+          "28bbd2d5-08d2-4885-a097-22ec42df58a1"
+        ],
+        "settings": {
+          "review_hdng": "What our Customers Are Saying",
+          "review_sub_hdng": "50+ Positive Reviews",
+          "quote_image": "shopify:\/\/shop_images\/left-quotes-sign.png"
+        }
+      },
+      "ap-single-products-grid": {
+        "type": "ap-single-products-grid",
+        "blocks": {
+          "188d6951-bb8a-4baa-ac27-d054fdd292ba": {
+            "type": "item",
+            "settings": {
+              "grid_hdng": "For The Planet",
+              "grid_hero": "shopify:\/\/shop_images\/1_2.png",
+              "grid_text": "We have partnered up with 1% For The Planet to giveback to organizations that fight against fast fashion. Fashion Takes Action, Textile Exchange, and Waste Cap are non profits that are supporting change to better our planet and our society. Each color shirt that we offer represents a different non-profit that we give back to. Thank you for supporting our mission of Quality Without Compromise.",
+              "grid_sub_hdng": ""
+            }
+          },
+          "a145931f-a22b-44e3-b0cc-7de9d4ccd66a": {
+            "type": "item",
+            "settings": {
+              "grid_hdng": "Sustainable & Stylish",
+              "grid_hero": "shopify:\/\/shop_images\/700x500_3.png",
+              "grid_text": "Filling the gap in the marketplace by creating a sustainable shirt that is also stylish to incorporate into your everyday lifestyle.",
+              "grid_sub_hdng": ""
+            }
+          },
+          "0fd2da12-04af-4cbe-a17b-a6f20cab70eb": {
+            "type": "item",
+            "settings": {
+              "grid_hdng": "Built For Anyday Style",
+              "grid_hero": "shopify:\/\/shop_images\/700x500_2.png",
+              "grid_text": "Dress it up, or dress it down, our SilkStretch™ shirts do it all. Perfect for working from home - a casual night out - or lounging on the weekend. Say hello to your new favorite shirt!",
+              "grid_sub_hdng": ""
+            }
+          },
+          "3e4b8799-12a3-42f5-adea-c51f3a7ba2ac": {
+            "type": "item",
+            "settings": {
+              "grid_hdng": "Curved Hem",
+              "grid_hero": "shopify:\/\/shop_images\/700x500_5.png",
+              "grid_text": "With versatility in mind we elevated the regular bottom cut of traditional shirts with a slightly curved hem that eliminates bunching around the waist. You can let hang, or tuck it in, it's completely up to you!",
+              "grid_sub_hdng": ""
+            }
+          }
+        },
+        "block_order": [
+          "188d6951-bb8a-4baa-ac27-d054fdd292ba",
+          "a145931f-a22b-44e3-b0cc-7de9d4ccd66a",
+          "0fd2da12-04af-4cbe-a17b-a6f20cab70eb",
+          "3e4b8799-12a3-42f5-adea-c51f3a7ba2ac"
+        ],
+        "settings": {}
+      },
+      "ap-grid-blocks-giving": {
+        "type": "ap-grid-blocks-giving",
+        "blocks": {
+          "3d00619c-d007-4c12-992c-fa889c47628e": {
+            "type": "item",
+            "settings": {
+              "youtube_id": "Z_387A7-gRo",
+              "ap_hdng_block": "Fashion Takes Action",
+              "ap_short_info_block": "A portion of our white shirt purchases support the Fashion Takes Action, a non-profit organization that is advancing sustainability in the fashion industry through education, awareness, research and collaboration.",
+              "autoplay": false
+            }
+          },
+          "47506b4d-8de7-4c84-a529-3551ccee5a3f": {
+            "type": "item",
+            "settings": {
+              "youtube_id": "NTJDqpW4IWI",
+              "ap_hdng_block": "Textile Exchange",
+              "ap_short_info_block": "A portion of each of our black shirt purchases go and support the Textile Exchange, a global non-profit that creates leaders in the sustainable fiber and materials industry set out to create material change.",
+              "autoplay": false
+            }
+          },
+          "95e3199c-41a4-40b2-8ad1-4c234beffd0d": {
+            "type": "item",
+            "settings": {
+              "youtube_id": "9W9QZ-0wBfI",
+              "ap_hdng_block": "WasteCap",
+              "ap_short_info_block": "A portion of each of our birch shirt purchases go and supports WasteCap, a non-profit organization that provides waste reduction and recycling assistance to businesses. WasteCap also assists and encourages organizations to effectively drive costs out of their operations through improved solid waste management practices.",
+              "autoplay": false
+            }
+          }
+        },
+        "block_order": [
+          "3d00619c-d007-4c12-992c-fa889c47628e",
+          "47506b4d-8de7-4c84-a529-3551ccee5a3f",
+          "95e3199c-41a4-40b2-8ad1-4c234beffd0d"
+        ],
+        "settings": {
+          "grid_img": "shopify:\/\/shop_images\/Charities_We_Give_Back_To.jpg"
+        }
+      },
+      "template-collection": {
+        "type": "template-collection",
+        "settings": {
+          "show_featured_image": false,
+          "show_description": true,
+          "tag_filtering": true,
+          "products_in_rows": 2,
+          "numbers_of_rows": 5
+        }
+      },
+      "template-cart": {
+        "type": "template-cart",
+        "settings": {
+          "enable_checkout_lock_icon": false,
+          "product_show_vendor": false,
+          "enable_order_notes": true,
+          "show_shipping_calculator": false,
+          "shipping_calculator_default_country": "United States"
+        }
+      },
+      "ap-home-banner": {
+        "type": "ap-home-banner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/bylt-long-sleeve-desktop-sale_1_1950x_bb902c36-c1b1-474b-a112-3ba1dc04fa7c.jpg"
+        }
+      },
+      "ap-home-client-logo": {
+        "type": "ap-home-client-logo",
+        "blocks": {
+          "005daef0-7193-4ebd-a651-1132ea0d3cfc": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/sf_black-01.png"
+            }
+          },
+          "5c7cff81-fe48-4891-9543-63628bda50d0": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/sm_black-01.png"
+            }
+          },
+          "9f74168d-f536-4481-90f5-09f182519a00": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/new_4_ethical_black-01.png"
+            }
+          },
+          "d3429d36-5dfd-4971-a476-353757963314": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/new_4_fair_labor_black-01.png"
+            }
+          }
+        },
+        "block_order": [
+          "005daef0-7193-4ebd-a651-1132ea0d3cfc",
+          "5c7cff81-fe48-4891-9543-63628bda50d0",
+          "9f74168d-f536-4481-90f5-09f182519a00",
+          "d3429d36-5dfd-4971-a476-353757963314"
+        ],
+        "settings": {
+          "hdng": "When creating AnydayCasual, it was extremely important for us to contribute to a better planet. Rather than just focusing on making a great product we decided that we also wanted to make a better impact on our world from start to finish with each of our decisions."
+        }
+      },
+      "ap-hoodie-section": {
+        "type": "ap-hoodie-section",
+        "settings": {
+          "left_img": "shopify:\/\/shop_images\/936x636.png",
+          "hdng_txt": "SilkStretch™ T-Shirts",
+          "btn_name": "Shop Now",
+          "btn_link": "shopify:\/\/collections\/t-shirt"
+        }
+      },
+      "ap-home-text-blocks": {
+        "type": "ap-home-text-blocks",
+        "blocks": {
+          "61e5d4c3-69e0-411c-9c6f-27f6b0cd5d12": {
+            "type": "item",
+            "settings": {
+              "img_sct": "shopify:\/\/shop_images\/700x500_1.png",
+              "sct_hdng": "THE WORK FROM HOME ESSENTIAL",
+              "sct_cnt": "Our SilkStretch™ T-shirts are perfect for working from home. Professional enough for a zoom meeting and perfect to pair with shorts, sweats, or your favorite jeans."
+            }
+          },
+          "a44d869a-4f2c-4de0-8f03-8034b9e472c6": {
+            "type": "item",
+            "settings": {
+              "img_sct": "shopify:\/\/shop_images\/700x500_4.png",
+              "sct_hdng": "VERSATILE FOR A NIGHT OUT",
+              "sct_cnt": "Fresh minimalist T-shirts you can wear year after year. Perfect for a night out with friends and designed for superior comfort and modern style."
+            }
+          },
+          "360c7d49-8bcc-4607-88c9-99c9b931bf36": {
+            "type": "item",
+            "settings": {
+              "img_sct": "shopify:\/\/shop_images\/RESIZED_Perfect_For_Your_Weekend_Adventures.jpg",
+              "sct_hdng": "PERFECT FOR YOUR WEEKEND ADVENTURES",
+              "sct_cnt": "Whether you’re spending your weekend working, relaxing, or traveling, the SilkStretch™ T-shirt is the perfect shirt for any occasion."
+            }
+          }
+        },
+        "block_order": [
+          "61e5d4c3-69e0-411c-9c6f-27f6b0cd5d12",
+          "a44d869a-4f2c-4de0-8f03-8034b9e472c6",
+          "360c7d49-8bcc-4607-88c9-99c9b931bf36"
+        ],
+        "settings": {}
+      },
+      "ap-home-shipping": {
+        "type": "ap-home-shipping",
+        "blocks": {
+          "d5600544-9ee2-426a-be07-cf156bae5914": {
+            "type": "item",
+            "settings": {
+              "icon_name": "SilkStretch™ Fabric",
+              "ap_icon": "shopify:\/\/shop_images\/fabric.png"
+            }
+          },
+          "9c10098c-deae-4d85-96d9-8eca8fffcb88": {
+            "type": "item",
+            "settings": {
+              "icon_name": "Anti-Odor Cotton",
+              "ap_icon": "shopify:\/\/shop_images\/anti_1_black-01_2_1.png"
+            }
+          },
+          "598a0c46-dfbd-47ed-82ae-72305f94ee83": {
+            "type": "item",
+            "settings": {
+              "icon_name": "Breathable",
+              "ap_icon": "shopify:\/\/shop_images\/2_1.png"
+            }
+          },
+          "a8f79407-9f3a-473e-89d4-399917a113a6": {
+            "type": "item",
+            "settings": {
+              "icon_name": "Buttery Soft",
+              "ap_icon": "shopify:\/\/shop_images\/3_2.png"
+            }
+          }
+        },
+        "block_order": [
+          "d5600544-9ee2-426a-be07-cf156bae5914",
+          "9c10098c-deae-4d85-96d9-8eca8fffcb88",
+          "598a0c46-dfbd-47ed-82ae-72305f94ee83",
+          "a8f79407-9f3a-473e-89d4-399917a113a6"
+        ],
+        "settings": {
+          "ap_cnt_hdng": "Superior comfort begins with innovative fabric processes",
+          "ap_txt_cnt": "We produce our garments with the world’s best sustainable fabrics, and finish them off with our premium SilkStretch™ knitting process to ensure each garment has limitless stretch and a silky soft feel."
+        }
+      },
+      "home-featured-collection": {
+        "type": "home-featured-collection",
+        "settings": {
+          "style": "default-style",
+          "title": "Featured Collection",
+          "button": "",
+          "collection": "t-shirt",
+          "products_in_rows": 3,
+          "number_of_rows": 1
+        }
+      },
+      "ap-fabric-section": {
+        "type": "ap-fabric-section",
+        "settings": {
+          "ap_hdng": "",
+          "ap_cntnt": "Everything we make goes through an extensive research, design and development process. From the design process in Milwaukee, Wisconsin, to the production process in remote villages across the world, we've searched the world to bring you the highest quality fabrics for a versatile lifestyle."
+        }
+      },
+      "static-giftcard": {
+        "type": "static-giftcard",
+        "settings": {}
+      },
+      "ap-size-chart-section": {
+        "type": "ap-size-chart-section",
+        "settings": {}
+      },
+      "16109502670d07950a": {
+        "type": "ap-home-banner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Home-page-hero-image-_1.png",
+          "hdng_txt": "<span class=\"quotes-man\">ANYDAY<\/span>  STYLE",
+          "btn_name": "SHOP NOW",
+          "btn_link": "shopify:\/\/collections\/t-shirt"
+        }
+      },
+      "1610950404a6881379": {
+        "type": "ap-home-client-logo",
+        "blocks": {
+          "58d27123-5100-4599-a3b6-f4725198d30e": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/sf_black-01.png"
+            }
+          },
+          "b4f9f496-4624-4172-90e3-c0aaec3a2e45": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/new_5_materials_black-01.png"
+            }
+          },
+          "bf7235b0-a386-4137-ae4e-bc998da48093": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/new_5_ethical_black-01.png"
+            }
+          },
+          "a7c88f36-7272-4e5e-ae88-0f0a98507b8d": {
+            "type": "item",
+            "settings": {
+              "client_logo": "shopify:\/\/shop_images\/new_5_fair_labor_black-01.png"
+            }
+          }
+        },
+        "block_order": [
+          "58d27123-5100-4599-a3b6-f4725198d30e",
+          "b4f9f496-4624-4172-90e3-c0aaec3a2e45",
+          "bf7235b0-a386-4137-ae4e-bc998da48093",
+          "a7c88f36-7272-4e5e-ae88-0f0a98507b8d"
+        ],
+        "settings": {
+          "hdng": "When creating AnydayCasual, it was extremely important for us to contribute to a better planet. Rather than just focusing on making a great product, we want to make a positive impact on our world from design to delivery."
+        }
+      },
+      "1610950409a4d5b657": {
+        "type": "home-featured-collection",
+        "settings": {
+          "style": "default-style",
+          "title": "Featured collection",
+          "button": "",
+          "collection": "t-shirt",
+          "products_in_rows": 3,
+          "number_of_rows": 1
+        }
+      },
+      "161095066124f29217": {
+        "type": "ap-home-text-blocks",
+        "blocks": {
+          "3e183e9f-6335-4ff2-8b3d-e94830aed7ed": {
+            "type": "item",
+            "settings": {
+              "img_sct": "shopify:\/\/shop_images\/700x500_1.png",
+              "sct_hdng": "THE WORK FROM HOME ESSENTIAL",
+              "sct_cnt": "Our SilkStretch™ T-shirts are perfect for working from home. Professional enough for a zoom meeting and perfect to pair with shorts, sweats, or your favorite jeans."
+            }
+          },
+          "2cee4aba-2168-4442-a53d-2ff0da5c3cff": {
+            "type": "item",
+            "settings": {
+              "img_sct": "shopify:\/\/shop_images\/700x500_4.png",
+              "sct_hdng": "VERSATILE FOR A NIGHT OUT",
+              "sct_cnt": "Fresh minimalist T-shirts you can wear year after year. Perfect for a night out with friends and designed for superior comfort and modern style."
+            }
+          },
+          "246e4e71-03a4-46c8-9821-c41983ecf13d": {
+            "type": "item",
+            "settings": {
+              "img_sct": "shopify:\/\/shop_images\/RESIZED_Perfect_For_Your_Weekend_Adventures.jpg",
+              "sct_hdng": "PERFECT FOR YOUR WEEKEND ADVENTURES",
+              "sct_cnt": "Whether you’re spending your weekend working, relaxing, or traveling, the SilkStretch™ T-shirt is the perfect shirt for any occasion."
+            }
+          }
+        },
+        "block_order": [
+          "3e183e9f-6335-4ff2-8b3d-e94830aed7ed",
+          "2cee4aba-2168-4442-a53d-2ff0da5c3cff",
+          "246e4e71-03a4-46c8-9821-c41983ecf13d"
+        ],
+        "settings": {}
+      },
+      "16109508769c92e20c": {
+        "type": "ap-hoodie-section",
+        "settings": {
+          "left_img": "shopify:\/\/shop_images\/936x636.png",
+          "hdng_txt": "SilkStretch™<span class=\"t-shirt\"> T-Shirts<\/span>",
+          "btn_name": "Shop Now",
+          "btn_link": "shopify:\/\/collections\/t-shirt"
+        }
+      },
+      "16109510300e588522": {
+        "type": "ap-home-shipping",
+        "blocks": {
+          "06c17f0f-2d73-4d08-bb89-092b17fa3e93": {
+            "type": "item",
+            "settings": {
+              "icon_name": "SilkStretch™ Fabric",
+              "ap_icon": "shopify:\/\/shop_images\/fabric.png"
+            }
+          },
+          "b506cdb6-056a-4ee6-bbfa-07f2a2ce2164": {
+            "type": "item",
+            "settings": {
+              "icon_name": "Anti-Odor Cotton",
+              "ap_icon": "shopify:\/\/shop_images\/anti_1_black-01_2_1.png"
+            }
+          },
+          "3435ee9b-c991-4714-afde-be1cd6c70cdd": {
+            "type": "item",
+            "settings": {
+              "icon_name": "Breathable",
+              "ap_icon": "shopify:\/\/shop_images\/2_1.png"
+            }
+          },
+          "83d92805-6b05-4d54-9381-3754446337f6": {
+            "type": "item",
+            "settings": {
+              "icon_name": "Buttery Soft",
+              "ap_icon": "shopify:\/\/shop_images\/3_2.png"
+            }
+          }
+        },
+        "block_order": [
+          "06c17f0f-2d73-4d08-bb89-092b17fa3e93",
+          "b506cdb6-056a-4ee6-bbfa-07f2a2ce2164",
+          "3435ee9b-c991-4714-afde-be1cd6c70cdd",
+          "83d92805-6b05-4d54-9381-3754446337f6"
+        ],
+        "settings": {
+          "ap_cnt_hdng": "Superior comfort begins with innovative fabric processes",
+          "ap_txt_cnt": "We produce our garments with the world’s best sustainable fabrics, and finish them off with our premium SilkStretch™ knitting process to ensure each garment has limitless stretch and a silky soft feel."
+        }
+      },
+      "1610951315c5be296c": {
+        "type": "instafeed",
+        "settings": {
+          "heading_font": "helvetica_n4",
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      },
+      "instafeed": {
+        "type": "instafeed",
+        "settings": {
+          "heading_font": "helvetica_n4",
+          "heading_size": 20,
+          "feed_width": 100,
+          "html_area": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "16109502670d07950a",
+      "1610950404a6881379",
+      "1610950409a4d5b657",
+      "161095066124f29217",
+      "16109508769c92e20c",
+      "16109510300e588522",
+      "1610951315c5be296c"
+    ]
+  },
+  "presets": {
+    "Home": {
+      "background-color": "#ffffff",
+      "body-text-color": "#24254e",
+      "accent-color": "#e95200",
+      "heading-color": "#24254e",
+      "border-color": "#f0eff2",
+      "primary-button-color": "#fff6eb",
+      "header-link-color": "#24254e",
+      "header-dropdown-color": "#ffffff",
+      "form-select-background": "#ffffff",
+      "form-select-color": "#1d1b44",
+      "form-select-border-color": "#f0eff2",
+      "footer-background-color": "#1d1b44",
+      "footer-header-color": "#e84d37",
+      "footer-accent-color": "#fff6eb",
+      "body_background_image": "",
+      "contrast_background_image": "",
+      "footer_background_image": "",
+      "font_body": "futura_n4",
+      "font_logo": "futura_n5",
+      "font_logo_capitalize": true,
+      "font_heading": "futura_n6",
+      "font_heading_capitalize": true,
+      "font_section_heading_bold": false,
+      "font_section_heading_capitalize": true,
+      "font_meta_bold": true,
+      "font_meta_capitalize": true,
+      "font_button": "futura_n6",
+      "font_button_capitalize": true,
+      "breadcrumbs_enable": false,
+      "product_show_vendor": false,
+      "product_stock_overlay": false,
+      "product_stock_overlay_show": 5,
+      "social_default_image": "",
+      "social_vimeo_url": "",
+      "social_youtube_url": "",
+      "social_rss_url": "",
+      "header-show-breadcrumbs": false,
+      "contrast-background-color": "#FAF7F6",
+      "error-color": "#B84949",
+      "meta-color": "#b7aba3",
+      "sections": {
+        "module-product": {
+          "type": "module-product",
+          "blocks": {
+            "module-product-0": {
+              "type": "additional_info",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "module-product-0"
+          ],
+          "settings": {
+            "show_spb": true,
+            "product_cart_redirect": true,
+            "center_product_details": true,
+            "product_show_vendor": false,
+            "linked_options": false,
+            "variants_style": "select",
+            "single_column_product": false,
+            "show_share_buttons": false,
+            "enable_zoom": true
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1"
+          ],
+          "settings": {
+            "enable": true,
+            "show_shadows": true,
+            "text_color": "#24254e",
+            "slideshow_layout": "full-bleed",
+            "slideshow_transition": "transition-fade",
+            "autoplay": false,
+            "frequency": 6
+          }
+        },
+        "general-footer": {
+          "type": "general-footer",
+          "settings": {
+            "menu_1": "footer",
+            "menu_2": "information-2",
+            "show_share_buttons": true,
+            "show_payment_icons": false
+          }
+        },
+        "1532492491152": {
+          "type": "home-featured-product",
+          "blocks": {
+            "1534960350998": {
+              "type": "additional_info",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1534960350998"
+          ],
+          "settings": {
+            "style": "default-style",
+            "show_spb": true,
+            "product_cart_redirect": true,
+            "product_show_vendor": false,
+            "linked_options": false,
+            "variants_style": "select",
+            "enable_zoom": true
+          }
+        },
+        "1532447919778": {
+          "type": "home-logo-list",
+          "blocks": {
+            "1532447919778-3": {
+              "type": "logo",
+              "settings": {}
+            },
+            "1532447919778-2": {
+              "type": "logo",
+              "settings": {}
+            },
+            "1532447919778-1": {
+              "type": "logo",
+              "settings": {}
+            },
+            "1532447919778-0": {
+              "type": "logo",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1532447919778-3",
+            "1532447919778-2",
+            "1532447919778-1",
+            "1532447919778-0"
+          ],
+          "settings": {
+            "style": "default-style",
+            "title": "",
+            "logos_in_rows": 4
+          }
+        },
+        "1532493094416": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "1532493094416-0": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "left"
+              }
+            },
+            "1532493212153": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "right"
+              }
+            }
+          },
+          "block_order": [
+            "1532493094416-0",
+            "1532493212153"
+          ],
+          "settings": {
+            "style": "default-style",
+            "show_borders": false
+          }
+        },
+        "1532492436211": {
+          "type": "pxs-newsletter",
+          "settings": {
+            "desktop_alignment": "right",
+            "mobile_alignment": "top"
+          }
+        },
+        "1532448025563": {
+          "type": "home-text-columns-with-images",
+          "blocks": {
+            "1532448025563-0": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "1532448025563-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "1532448025563-2": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1532448025563-0",
+            "1532448025563-1",
+            "1532448025563-2"
+          ],
+          "settings": {
+            "style": "default-style",
+            "max_image_width": 30
+          }
+        },
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "header_sticky": true,
+            "show_cart": true,
+            "show_search": true,
+            "show_promotion": false,
+            "promotion_home_only": true,
+            "promotion_style": "standard-style"
+          }
+        },
+        "1534882811858": {
+          "type": "pxs-video",
+          "settings": {
+            "aspect_ratio": "16-9",
+            "autoplay": false,
+            "overlay_show": true,
+            "overlay_header_position": "above-button",
+            "overlay_header_color": "#ffffff",
+            "overlay_color": "#222222",
+            "overlay_color_opacity": 15,
+            "overlay_image_position": "center-center",
+            "overlay_button_style": "primary"
+          }
+        }
+      },
+      "content_for_index": [
+        "1532447919778",
+        "1532493094416",
+        "1534882811858",
+        "1532448025563",
+        "1532492491152",
+        "1532492436211"
+      ]
+    },
+    "Tech": {
+      "background-color": "#ffffff",
+      "body-text-color": "#51595d",
+      "accent-color": "#126e7a",
+      "heading-color": "#444951",
+      "border-color": "#d7dcde",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#51595d",
+      "header-dropdown-color": "#d7dcde",
+      "form-select-background": "#ffffff",
+      "form-select-color": "#51595d",
+      "form-select-border-color": "#d7dcde",
+      "footer-background-color": "#19252b",
+      "footer-header-color": "#ffffff",
+      "footer-accent-color": "#ffffff",
+      "body_background_image": "",
+      "contrast_background_image": "",
+      "footer_background_image": "",
+      "font_body": "avenir_next_n4",
+      "font_logo": "avenir_next_n7",
+      "font_logo_capitalize": true,
+      "font_heading": "avenir_next_n5",
+      "font_heading_capitalize": false,
+      "font_section_heading_bold": false,
+      "font_section_heading_capitalize": true,
+      "font_meta_bold": true,
+      "font_meta_capitalize": false,
+      "font_button": "avenir_next_n7",
+      "font_button_capitalize": true,
+      "breadcrumbs_enable": false,
+      "product_show_vendor": false,
+      "product_stock_overlay": false,
+      "product_stock_overlay_show": 5,
+      "heading_font": "Google_Montserrat_400,700",
+      "header-show-breadcrumbs": false,
+      "meta_font_weight": "400",
+      "button_font": "Google_Montserrat_400,700",
+      "button_font_capitalize": true,
+      "heading_font_weight": "400",
+      "section_heading_font_capitalize": true,
+      "button_font_weight": "700",
+      "meta_font_capitalize": true,
+      "contrast-background-color": "#FAF7F6",
+      "error-color": "#B84949",
+      "logo_font": "Google_Poppins_400,700",
+      "logo_font_capitalize": true,
+      "body_font": "Google_Roboto_400,700",
+      "meta-color": "#b7aba3",
+      "heading_font_capitalize": false,
+      "logo_font_weight": "700",
+      "section_heading_font_weight": "700",
+      "sections": {
+        "1522191048122": {
+          "type": "pxs-newsletter",
+          "settings": {
+            "desktop_alignment": "left",
+            "mobile_alignment": "top"
+          }
+        },
+        "template-article": {
+          "type": "template-article",
+          "settings": {
+            "show_tags": true,
+            "show_author": false,
+            "show_share_buttons": true,
+            "show_full_width_image": true
+          }
+        },
+        "module-product": {
+          "type": "module-product",
+          "settings": {
+            "show_spb": true,
+            "product_cart_redirect": true,
+            "center_product_details": false,
+            "product_show_vendor": false,
+            "linked_options": true,
+            "variants_style": "select",
+            "single_column_product": false,
+            "show_share_buttons": true,
+            "enable_zoom": true
+          }
+        },
+        "template-blog": {
+          "type": "template-blog",
+          "settings": {
+            "layout": "grid",
+            "show_rss_icon": false,
+            "show_tags": true,
+            "show_share_buttons": false,
+            "show_featured_image": true,
+            "show_author": false,
+            "show_comment_count": false
+          }
+        },
+        "1522191830168": {
+          "type": "home-twitter",
+          "settings": {
+            "style": "accent-style"
+          }
+        },
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "header_sticky": true,
+            "show_cart": true,
+            "show_search": true,
+            "menu_style": "header"
+          }
+        },
+        "general-footer": {
+          "type": "general-footer",
+          "settings": {
+            "show_share_buttons": true,
+            "show_payment_icons": false
+          }
+        },
+        "1484623673945": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "1484626483494": {
+              "type": "image",
+              "settings": {}
+            },
+            "1484623673945-0": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1484626483494",
+            "1484623673945-0"
+          ],
+          "settings": {
+            "style": "default-style",
+            "show_borders": false
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "1522190951291": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1522190951291"
+          ],
+          "settings": {
+            "enable": false,
+            "show_shadows": true,
+            "text_color": "#51595d",
+            "slideshow_layout": "full-width",
+            "slideshow_transition": "transition-slide",
+            "autoplay": false,
+            "frequency": 5
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "1484628761944": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "1484628761944"
+          ],
+          "settings": {
+            "style": "contrast-style"
+          }
+        },
+        "1484621547894": {
+          "type": "home-image-with-text-overlay",
+          "settings": {
+            "style": "accent-style",
+            "overlay_opacity_strength": 20
+          }
+        },
+        "home-featured-product": {
+          "type": "home-featured-product",
+          "settings": {
+            "style": "default-style",
+            "show_spb": true,
+            "product_show_vendor": false,
+            "linked_options": true,
+            "variants_style": "select",
+            "enable_zoom": true
+          }
+        },
+        "module-product-slideshow": {
+          "type": "module-product-slideshow",
+          "settings": {
+            "slideshow_layout": "full-bleed",
+            "slideshow_transition": "transition-slide",
+            "autoplay": true,
+            "frequency": 5,
+            "thumbnail_pagination": true
+          }
+        },
+        "1534285282377": {
+          "type": "home-text-columns-with-images",
+          "blocks": {
+            "1534285282377-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "1534285282377-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "1534285282377-0": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1534285282377-1",
+            "1534285282377-2",
+            "1534285282377-0"
+          ],
+          "settings": {
+            "style": "contrast-style",
+            "max_image_width": 25
+          }
+        }
+      },
+      "content_for_index": [
+        "1484621547894",
+        "1534285282377",
+        "1484623673945",
+        "home-testimonials",
+        "home-featured-product",
+        "1522191830168",
+        "1522191048122"
+      ]
+    },
+    "Cloth": {
+      "background-color": "#ffffff",
+      "contrast-background-color": "#2E3438",
+      "body-text-color": "#838B8F",
+      "accent-color": "#4E7B99",
+      "heading-color": "#2E3438",
+      "meta-color": "#838b8f",
+      "error-color": "#b8474f",
+      "border-color": "#EDF0F2",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#838B8F",
+      "header-dropdown-color": "#D7DCDE",
+      "form-select-background": "#F4F5F5",
+      "form-select-color": "#838B8F",
+      "form-select-border-color": "#D7DCDE",
+      "footer-background-color": "#4E7B99",
+      "footer-header-color": "#ffffff",
+      "footer-accent-color": "#ffffff",
+      "font_body": "open_sans_n4",
+      "font_logo": "open_sans_n7",
+      "font_heading": "volkhov_n7",
+      "font_button": "volkhov_n7",
+      "font_logo_capitalize": true,
+      "font_heading_capitalize": false,
+      "font_section_heading_capitalize": true,
+      "font_meta_capitalize": true,
+      "font_button_capitalize": true,
+      "header-show-breadcrumbs": false,
+      "favicon": "",
+      "sections": {
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "menu_style": "below-header"
+          }
+        },
+        "module-product-slideshow": {
+          "type": "module-product-slideshow",
+          "settings": {
+            "slideshow_color": "#989ea0",
+            "slideshow_layout": "content-width",
+            "autoplay": false
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": true,
+            "show_shadows": true,
+            "text_color": "#989ea0",
+            "slideshow_layout": "full-width",
+            "autoplay": false
+          }
+        },
+        "home-image-with-text": {
+          "type": "home-image-with-text",
+          "settings": {
+            "style": "default-style",
+            "media_layout": "regular"
+          }
+        },
+        "home-text-columns-with-images": {
+          "type": "home-text-columns-with-images",
+          "blocks": {
+            "column-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "column-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "column-3": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "column-1",
+            "column-2",
+            "column-3"
+          ],
+          "settings": {
+            "style": "contrast-style"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default-style"
+          }
+        },
+        "home-featured-product": {
+          "type": "home-featured-product",
+          "settings": {
+            "style": "default-style",
+            "title": "Featured product"
+          }
+        },
+        "home-alternating-content": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "home-alternating-content-1": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "left"
+              }
+            },
+            "home-alternating-content-2": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "right"
+              }
+            },
+            "home-alternating-content-3": {
+              "type": "image",
+              "settings": {
+                "media_alignment": "left"
+              }
+            }
+          },
+          "block_order": [
+            "home-alternating-content-1",
+            "home-alternating-content-2",
+            "home-alternating-content-3"
+          ],
+          "settings": {
+            "style": "default-style",
+            "title": "Alternating content",
+            "show_borders": true
+          }
+        },
+        "home-featured-collection": {
+          "type": "home-featured-collection",
+          "settings": {
+            "style": "default-style",
+            "title": "Featured collection"
+          }
+        },
+        "home-logo-list": {
+          "type": "home-logo-list",
+          "blocks": {
+            "logo-1": {
+              "type": "logo",
+              "settings": {}
+            },
+            "logo-2": {
+              "type": "logo",
+              "settings": {}
+            },
+            "logo-3": {
+              "type": "logo",
+              "settings": {}
+            },
+            "logo-4": {
+              "type": "logo",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "logo-1",
+            "logo-2",
+            "logo-3",
+            "logo-4"
+          ],
+          "settings": {
+            "style": "default-style",
+            "logos_in_rows": 4
+          }
+        }
+      },
+      "content_for_index": [
+        "home-image-with-text",
+        "home-alternating-content",
+        "home-text-columns-with-images",
+        "home-testimonials",
+        "home-featured-product",
+        "home-featured-collection",
+        "home-logo-list"
+      ]
+    },
+    "Travel": {
+      "background-color": "#faf9f6",
+      "body-text-color": "#262626",
+      "accent-color": "#29291a",
+      "heading-color": "#111111",
+      "border-color": "#29291a",
+      "primary-button-color": "#ffffff",
+      "header-link-color": "#262626",
+      "header-dropdown-color": "#f2f1ed",
+      "form-select-background": "#faf9f6",
+      "form-select-color": "#262626",
+      "form-select-border-color": "#29291a",
+      "footer-background-color": "#f2f1ed",
+      "footer-header-color": "#262626",
+      "footer-accent-color": "#262626",
+      "body_background_image": "",
+      "contrast_background_image": "",
+      "footer_background_image": "",
+      "font_body": "zurich_n3",
+      "font_logo": "neue_haas_unica_n4",
+      "font_logo_capitalize": false,
+      "font_heading": "neue_haas_unica_n3",
+      "font_heading_capitalize": false,
+      "font_section_heading_bold": false,
+      "font_section_heading_capitalize": false,
+      "font_meta_bold": false,
+      "font_meta_capitalize": false,
+      "font_button": "zurich_n4",
+      "font_button_capitalize": true,
+      "breadcrumbs_enable": false,
+      "product_show_vendor": false,
+      "product_stock_overlay": true,
+      "product_stock_overlay_show": 5,
+      "social_default_image": "",
+      "social_facebook_url": "",
+      "social_twitter_url": "",
+      "social_pinterest_url": "",
+      "social_instagram_url": "",
+      "social_vimeo_url": "",
+      "social_youtube_url": "",
+      "social_rss_url": "",
+      "favicon": "",
+      "header-show-breadcrumbs": false,
+      "contrast-background-color": "#FAF7F6",
+      "error-color": "#B84949",
+      "meta-color": "#b7aba3",
+      "sections": {
+        "module-product": {
+          "type": "module-product",
+          "settings": {
+            "show_spb": true,
+            "product_cart_redirect": true,
+            "center_product_details": false,
+            "product_show_vendor": true,
+            "linked_options": false,
+            "variants_style": "radio",
+            "single_column_product": false,
+            "show_share_buttons": false,
+            "enable_zoom": true
+          }
+        },
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1579198597094": {
+              "type": "slide",
+              "settings": {
+                "image": "",
+                "alignment": "left"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "1579198597094"
+          ],
+          "settings": {
+            "enable": false,
+            "show_shadows": false,
+            "text_color": "#ffffff",
+            "slideshow_layout": "full-width",
+            "slideshow_transition": "transition-fade",
+            "autoplay": false,
+            "frequency": 6
+          }
+        },
+        "general-footer": {
+          "type": "general-footer",
+          "settings": {
+            "show_menu_heading": false,
+            "menu_1": "footer",
+            "menu_2": "company",
+            "show_social_buttons": true,
+            "social_heading": "",
+            "show_share_buttons": false,
+            "sharing_heading": "",
+            "enable_twitter": true,
+            "enable_facebook": true,
+            "enable_pinterest": true,
+            "enable_fancy": false,
+            "show_payment_icons": false
+          }
+        },
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "header_sticky": false,
+            "show_cart": false,
+            "show_search": true,
+            "header_logo": "",
+            "menu": "main-menu",
+            "menu_style": "below-header",
+            "color_override": "default",
+            "header_logo_alternate": "",
+            "show_promotion": false,
+            "promotion_home_only": false,
+            "promotion_style": "accent-style"
+          }
+        },
+        "1579052680912": {
+          "type": "home-blog-posts",
+          "settings": {
+            "style": "accent-style",
+            "title": "",
+            "blog": "news"
+          }
+        },
+        "1579053017351": {
+          "type": "home-text",
+          "blocks": {
+            "1579053017351-0": {
+              "type": "rich_text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1579053017351-0"
+          ],
+          "settings": {
+            "style": "accent-style",
+            "show_borders": false
+          }
+        },
+        "1579053276275": {
+          "type": "pxs-video",
+          "settings": {
+            "style": "accent-style",
+            "title": "",
+            "text": "",
+            "video": "",
+            "aspect_ratio": "16-9",
+            "video_layout": "full-width",
+            "autoplay": false,
+            "overlay_show": true,
+            "overlay_heading": "",
+            "overlay_text": "",
+            "overlay_header_position": "above-button",
+            "overlay_header_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_color_opacity": 30,
+            "overlay_image": "",
+            "overlay_image_position": "right-center",
+            "overlay_button_style": "secondary"
+          }
+        },
+        "1579054823300": {
+          "type": "pxs-newsletter",
+          "settings": {
+            "desktop_alignment": "left",
+            "mobile_alignment": "top"
+          }
+        },
+        "template-blog": {
+          "type": "template-blog",
+          "settings": {
+            "layout": "grid",
+            "show_rss_icon": false,
+            "show_tags": true,
+            "show_share_buttons": false,
+            "show_featured_image": true,
+            "show_author": false,
+            "show_comment_count": false
+          }
+        },
+        "template-collection": {
+          "type": "template-collection",
+          "settings": {
+            "show_featured_image": false,
+            "show_description": true,
+            "tag_filtering": true,
+            "products_in_rows": 3,
+            "numbers_of_rows": 12
+          }
+        },
+        "static-product-recommendations": {
+          "type": "static-product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "product_limit": 4
+          }
+        },
+        "1579199903361": {
+          "type": "pxs-video",
+          "settings": {
+            "style": "accent-style",
+            "title": "",
+            "text": "",
+            "video": "",
+            "aspect_ratio": "21-9",
+            "video_layout": "content-width",
+            "autoplay": false,
+            "overlay_show": true,
+            "overlay_heading": "",
+            "overlay_text": "",
+            "overlay_header_position": "above-button",
+            "overlay_header_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_color_opacity": 7,
+            "overlay_image": "",
+            "overlay_image_position": "center-center",
+            "overlay_button_style": "secondary"
+          }
+        },
+        "1579205720761": {
+          "type": "home-featured-product",
+          "blocks": {
+            "1579216389383": {
+              "type": "additional_info",
+              "settings": {
+                "info_text": "",
+                "info_url": "",
+                "info_icon": "question-mark"
+              }
+            },
+            "1579205720761-0": {
+              "type": "additional_info",
+              "settings": {
+                "info_text": "",
+                "info_url": "",
+                "info_icon": "info"
+              }
+            }
+          },
+          "block_order": [
+            "1579216389383",
+            "1579205720761-0"
+          ],
+          "settings": {
+            "style": "default-style",
+            "show_spb": false,
+            "product_cart_redirect": false,
+            "product_show_vendor": true,
+            "linked_options": true,
+            "variants_style": "select",
+            "enable_zoom": true
+          }
+        },
+        "1579290527558": {
+          "type": "home-testimonials",
+          "blocks": {
+            "1579290527558-0": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "1579296861621": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1579290527558-0",
+            "1579296861621"
+          ],
+          "settings": {
+            "style": "contrast-style",
+            "title": ""
+          }
+        },
+        "template-list-collections": {
+          "type": "template-list-collections",
+          "settings": {
+            "show_description": true
+          }
+        },
+        "module-faq": {
+          "type": "module-faq",
+          "blocks": {
+            "module-faq-0": {
+              "type": "faq",
+              "settings": {}
+            },
+            "module-faq-1": {
+              "type": "faq",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "module-faq-0",
+            "module-faq-1"
+          ],
+          "settings": {}
+        },
+        "1580157234807": {
+          "type": "home-collection-list",
+          "blocks": {
+            "1580157234807-0": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "1580157234807-2": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "1580523440115": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            }
+          },
+          "block_order": [
+            "1580157234807-0",
+            "1580523440115",
+            "1580157234807-2"
+          ],
+          "settings": {
+            "style": "default-style",
+            "title": "",
+            "show_product_count": false
+          }
+        },
+        "template-article": {
+          "type": "template-article",
+          "settings": {
+            "show_tags": false,
+            "show_author": false,
+            "show_share_buttons": false,
+            "show_full_width_image": false
+          }
+        },
+        "1580362255288": {
+          "type": "home-image-with-text-overlay",
+          "settings": {
+            "style": "accent-style",
+            "overlay_opacity_strength": 30
+          }
+        },
+        "1580362443202": {
+          "type": "home-logo-list",
+          "blocks": {
+            "1580517749327": {
+              "type": "logo",
+              "settings": {
+                "url": "",
+                "logo": ""
+              }
+            },
+            "1580517735892": {
+              "type": "logo",
+              "settings": {
+                "url": "",
+                "logo": ""
+              }
+            },
+            "1580362443202-2": {
+              "type": "logo",
+              "settings": {
+                "url": "",
+                "logo": ""
+              }
+            },
+            "1580362443202-0": {
+              "type": "logo",
+              "settings": {
+                "url": "",
+                "logo": ""
+              }
+            }
+          },
+          "block_order": [
+            "1580517749327",
+            "1580517735892",
+            "1580362443202-2",
+            "1580362443202-0"
+          ],
+          "settings": {
+            "style": "accent-style",
+            "logos_in_rows": 4
+          }
+        }
+      },
+      "content_for_index": [
+        "1579053276275",
+        "1580362443202",
+        "1580157234807",
+        "1580362255288",
+        "1579205720761",
+        "1579290527558",
+        "1579053017351",
+        "1579199903361",
+        "1579052680912",
+        "1579054823300"
+      ]
+    }
+  }
+}

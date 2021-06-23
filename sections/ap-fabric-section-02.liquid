@@ -1,0 +1,165 @@
+<div class="container-fluid ap-icons-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 col-lg-11 mx-auto">
+        <div class="ap-inner card px-md-5 px-4 py-md-5 py-4">
+    
+          
+            
+              <div class="row mx-n3 mx-n2">
+
+
+                <div class="col-md-2 col-6 mb-0 px-md-3 px-2">
+                  <div class="retail-program-media">
+                    <div class="media-icon mb-3 justify-content-center d-flex align-items-center mx-auto d-block">
+
+                      <img src="{{ section.settings.ap_icon_01 | img_url: '', crop: 'center' }}">
+
+                    </div>
+                    <div class="media-body text-center">
+                      <p class="font-weight-bold font-size-md mb-0">
+                        {{ section.settings.icon_name_01 }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-6 mb-0 px-md-3 px-2">
+                  <div class="retail-program-media">
+                    <div class="media-icon mb-3 justify-content-center d-flex align-items-center mx-auto d-block">
+
+                      <img src="{{ section.settings.ap_icon_02 | img_url: '', crop: 'center' }}">
+
+                    </div>
+                    <div class="media-body text-center">
+                      <p class="font-weight-bold font-size-md mb-0">
+                        {{ section.settings.icon_name_02 }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-6 mb-0 px-md-3 px-2">
+                  <div class="retail-program-media">
+                    <div class="media-icon mb-3 justify-content-center d-flex align-items-center mx-auto d-block">
+
+                      <img src="{{ section.settings.ap_icon_03 | img_url: '', crop: 'center' }}">
+
+                    </div>
+                    <div class="media-body text-center">
+                      <p class="font-weight-bold font-size-md mb-0">
+                        {{ section.settings.icon_name_03 }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-md-2 col-6 mb-0 px-md-3 px-2">
+                  <div class="retail-program-media">
+                    <div class="media-icon mb-3 justify-content-center d-flex align-items-center mx-auto d-block">
+
+                      <img src="{{ section.settings.ap_icon_04 | img_url: '', crop: 'center' }}">
+
+                    </div>
+                    <div class="media-body text-center">
+                      <p class="font-weight-bold font-size-md mb-0">
+                        {{ section.settings.icon_name_04 }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12  mt-5 mt-md-0 px-2">
+                  <div class="inner pk-cnt-section">
+                    <h4>{{ section.settings.ap_cnt_hdng }}</h4>
+                    <p>{{ section.settings.ap_txt_cnt }}</p>
+                  </div>
+                </div>
+
+
+              </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Icon Section",
+    "settings": [
+      {
+          "type": "header",
+          "content": "Icons List"
+      },
+      {
+        "type": "text",
+        "id": "icon_name_01",
+        "label": "Icon Name"
+      },
+      {
+        "type": "image_picker",
+        "id": "ap_icon_01",
+        "label": "Icon 01"
+      },
+      {
+        "type": "text",
+        "id": "icon_name_02",
+        "label": "Icon Name"
+      },
+      {
+        "type": "image_picker",
+        "id": "ap_icon_02",
+        "label": "Icon 02"
+      },
+      {
+        "type": "text",
+        "id": "icon_name_03",
+        "label": "Icon Name"
+      },
+      {
+        "type": "image_picker",
+        "id": "ap_icon_03",
+        "label": "Icon 03"
+      },
+      {
+        "type": "text",
+        "id": "icon_name_04",
+        "label": "Icon Name"
+      },
+      {
+        "type": "image_picker",
+        "id": "ap_icon_04",
+        "label": "Icon 04"
+      },
+	  {
+	  	"type": "header",
+		"content": "Content section"
+	  },
+      {
+        "type": "text",
+        "id": "ap_cnt_hdng",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "ap_txt_cnt",
+        "label": "Content Area"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

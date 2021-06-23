@@ -1,0 +1,49 @@
+<div class="container-fluid p-0 bg-fr-hdei">
+  <div class="row">
+    <div class="col-md-6 hdie-img-sct">
+      <img src="{{ section.settings.left_img | img_url: '', crop: 'center' }}" class="ap-client-logo">
+    </div>
+    <div class="col-md-6 blnkt-hdie-hdng text-center">
+      <h1>{{section.settings.hdng_txt}}</h1>
+      <a href="{{section.settings.btn_link}}"><button class="shop-now-btn">{{section.settings.btn_name}}</button></a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hoodie Section",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "left_img",
+      "label": "Choose Image"
+	},
+	{
+	  "type": "text",
+      "id": "hdng_txt",
+      "label": "Heading"
+	},
+	{
+	  "type": "text",
+      "id": "btn_name",
+      "label": "button name"
+	},
+	{
+	  "type": "url",
+      "id": "btn_link",
+      "label": "Url"
+	}
+	],
+	"presets": [{
+    "name": "Hoodie Section",
+    "category": "Custom Sections"
+  }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

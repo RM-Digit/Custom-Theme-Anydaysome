@@ -1,0 +1,115 @@
+<div class="container-fluid ap-icons-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 col-lg-11 mx-auto">
+        <div class="ap-inner card px-md-5 px-4 py-md-5 py-4">
+    
+          
+            
+              <div class="row mx-n3 mx-n2">
+
+				{% for block in section.blocks %}
+                <div class="col-md-2 col-6 mb-0 px-md-3 px-2 d-none d-sm-block">
+                  <div class="retail-program-media">
+                    <div class="media-icon mb-3 justify-content-center d-flex align-items-center mx-auto d-block">
+
+                      <img src="{{ block.settings.ap_icon | img_url: '', crop: 'center' }}">
+
+                    </div>
+                    <div class="media-body text-center">
+                      <p class="font-weight-bold font-size-md mb-0">
+                        {{ block.settings.icon_name }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+				{% endfor %}
+                <div class="col-md-4 col-12  mt-5 mt-md-0 px-2">
+                  <div class="inner pk-cnt-section">
+                    <h4>{{ section.settings.ap_cnt_hdng }}</h4>
+                    <div class="row my-3">
+                    {% for block in section.blocks %}
+                    <div class="col-3 d-sm-none">
+                      <div class="retail-program-media">
+                        <div class="media-icon mb-3 justify-content-center d-flex align-items-center mx-auto d-block">
+
+                          <img src="{{ block.settings.ap_icon | img_url: '', crop: 'center' }}">
+
+                        </div>
+                        <div class="media-body text-center">
+                          <p class="font-weight-bold font-size-md mb-0">
+                            {{ block.settings.icon_name }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+				{% endfor %}
+                    </div>
+                    <p>{{ section.settings.ap_txt_cnt }}</p>
+                  </div>
+                </div>
+
+
+              </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Home Shipping",
+	"max_blocks": 4,
+    "settings": [
+      
+	  {
+	  	"type": "header",
+		"content": "Content section"
+	  },
+      {
+        "type": "text",
+        "id": "ap_cnt_hdng",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "ap_txt_cnt",
+        "label": "Content Area"
+      }
+    ],
+	"blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+        "type": "text",
+        "id": "icon_name",
+        "label": "Icon Name"
+      },
+      {
+        "type": "image_picker",
+        "id": "ap_icon",
+        "label": "Icon"
+      }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Home Shipping",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}
+
+

@@ -1,0 +1,41 @@
+<div class="container-fluid ap-banner-faq p-0" >
+<!--   <div class="container"> -->
+    <div class="row">
+      <div class="col-12 text-center ap-banner-height">
+        
+        <img src="{{ section.settings.ap_banner | img_url: '', crop: 'center' }}" class="w-100">
+        
+      </div>
+<!--     </div> -->
+  </div>
+</div>
+
+<!-- style="background: url({{ section.settings.ap_banner | img_url: '', crop: 'center' }})"
+<h1>
+          {{ section.settings.banner_hdng }}
+        </h1> -->
+
+
+{% schema %}
+  {
+    "name": "Section Giving banner",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "ap_banner",
+      "label": "Upload Banner"	
+    },
+    {
+      "type": "text",
+      "id": "banner_hdng",
+      "label": "Title"
+    }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

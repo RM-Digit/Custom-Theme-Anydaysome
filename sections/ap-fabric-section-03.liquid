@@ -1,0 +1,68 @@
+<div class="container-fluid ap-half">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-sm-10 col-md-6 d-flex align-items-center">
+        <img src="{{ section.settings.cntnt_img | img_url: '', crop: 'center' }}" class="w-100">
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-6 d-flex align-items-center mt-4 mt-md-0">
+        <div class="inner">
+          <h2>
+            {{ section.settings.cntnt_hdng }}
+          </h2>
+
+          <p>
+            {{ section.settings.cntnt_desc }}
+          </p>
+          
+          <p>
+            <a class="ap-btn" href="{{ section.settings.btn_url }}">
+            	{{ section.settings.btn_name }}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Content Section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "cntnt_hdng",
+      "label": "Title"
+    },
+	{
+      "type": "textarea",
+      "id": "cntnt_desc",
+      "label": "Title"
+    },
+	{
+      "type": "text",
+      "id": "btn_name",
+      "label": "Button Name"
+    },
+	{
+      "type": "text",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+	{
+      "type": "image_picker",
+      "id": "cntnt_img",
+      "label": "Hero Image"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

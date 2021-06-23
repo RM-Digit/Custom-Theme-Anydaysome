@@ -1,0 +1,111 @@
+
+<div class="newslter-section-main">
+ <div class="container-fluid ap-newsletter newslter" style="background: {{ section.settings.nl_bg_color }};">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12 col-sm-12 col-md-6 d-flex align-items-center">
+        <div class="inner ap-width">
+          <h1 class="ap-hdng">
+            {{ section.settings.nl_title }}
+          </h1>
+
+          <p class="ap-subHdng">
+            {{ section.settings.nl_caption }}
+          </p>
+          
+          
+          {% form 'customer' %}
+
+        {{ form.errors | default_errors }}
+
+         {% if form.posted_successfully? %}
+          <div class="newsletter-message">
+            <p>{{ 'general.mailing_list.message' | t }}</p>
+          </div>
+        {% else %}
+          {%- capture tags -%}
+            {%- unless template contains 'password' %}
+              newsletter
+            {%- else -%}
+              prospect, password page
+            {%- endunless -%}
+          {%- endcapture -%}
+		<div class="ap-form-wrapper">
+          <input type="hidden" id="contact_tags" name="contact[tags]" value="{{ tags | strip }}">
+
+          <input
+            class="input-field"
+            name="contact[email]"
+            type="email"
+            placeholder="{{ 'general.general.email_placeholder' | t }}">
+
+          <input
+              class="ap-submit"
+              type="submit"
+              value="{{ 'general.general.subscribe' | t }}">
+        </div>
+        {% endif %}
+
+      {% endform %}
+         <div class="ap-form-wrapper">
+              <input class="input-field" type="text" placeholder="Email Address" name="contact">
+              <input type="submit" class="ap-submit" value="subscribe">
+          </div> 
+
+          
+          
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-12 col-md-6 d-flex slign-items-center mt-4 mt-md-0">
+<!--         <div class="inner">
+          <img src="{{ section.settings.nl_hero | img_url: "large" }}" class="w-100">
+        </div> -->
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+ {% schema %}
+  {
+  "name": "Newsletter",
+  "settings": [
+	{
+      "type": "text",
+      "id": "nl_title",
+      "label": "Team Title"
+    },
+	{
+      "type": "textarea",
+      "id": "nl_caption",
+      "label": "Team Caption"
+    },
+    {
+      "type": "image_picker",
+      "id": "nl_hero",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "nl_bg_color",
+      "label": "Background",
+      "default": "#333333"
+    }
+  ],
+  "presets": [{
+    "name": "Newsletter",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}
+</div>

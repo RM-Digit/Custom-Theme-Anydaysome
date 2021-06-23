@@ -1,0 +1,90 @@
+<div class="container-fluid ap-grid-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 mb-sm-5">
+        <div class="inner text-center">
+            <img src=" {{ section.settings.grid_img | img_url: '', crop: 'center' }} ">
+        </div>
+      </div>
+    </div>
+    {% assign count = 1 %}
+    {% for block in section.blocks %}
+    {% assign evens = count | modulo: 2 %}
+    <div class="row d-flex justify-content-center mt-4 {% if evens == 0 %}flex-row flex-md-row-reverse flex-lg-row-reverse {% endif %} {% if count != 1 %} ap-grid-padding {% endif %}">
+      <div class="col-12 col-sm-10 col-md-6 mt-4 d-flex align-items-center">
+        <!--  flex-row flex-md-row-reverse flex-lg-row-reverse -->
+        <div class="inner">
+          <h2 class="ap-grid-hdng">
+            {{ block.settings.ap_hdng_block }}
+          </h2>
+
+          <p class="ap-grid-para">
+            {{ block.settings.ap_short_info_block }}
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-10 col-md-6 mt-4 d-flex align-items-center">
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/{{ block.settings.youtube_id }}{% if block.settings.autoplay%}?autoplay=1&mute=0{% endif %}"></iframe>
+        
+        <!--- video section ----->
+        
+      </div>
+    </div>
+     {% assign count = count | plus: 1 %}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Giving Back Blocks",
+  "settings": [
+	{
+      "type": "image_picker",
+      "id": "grid_img",
+      "label": "Choose Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "youtube_id",
+          "label": "Paste Youtube video ID Here"
+        },
+		{
+          "type": "text",
+          "id": "ap_hdng_block",
+          "label": "Heading"
+        },
+		{
+          "type": "textarea",
+          "id": "ap_short_info_block",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Enable Autoplay"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Giving Back Blocks",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

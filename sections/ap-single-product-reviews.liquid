@@ -1,0 +1,101 @@
+{{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
+{{ 'owl.theme.default.min.css' | asset_url | stylesheet_tag }}
+
+<div class="container-fluid mwpl-review-slider">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12">
+        <div class="inner">
+          <h1 class="ap-main-hdng">
+            {{ section.settings.review_hdng }}
+          </h1>
+          <p class="ap_h2Hdng text-center mb-5">
+            {{ section.settings.review_sub_hdng }}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12">
+
+
+        <div class="inner text-center">
+          <div class="owl-carousel owl-theme" id="ap-review-slider">
+            {% for block in section.blocks %}
+
+            <div class="item">
+              <figure>
+                <img src="{{ section.settings.quote_image | img_url: '', crop: 'center' }}" class="">
+              </figure>
+
+              <p class="ap-cntnt">
+                {{ block.settings.review_text }}
+              </p>
+
+              <p class="ap-name">
+                {{ block.settings.buyer_name }}
+              </p>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+  "name": "Product Reviews Slider",
+  "settings": [
+	{
+      "type": "text",
+      "id": "review_hdng",
+      "label": "Header Text"
+    },
+	{
+      "type": "text",
+      "id": "review_sub_hdng",
+      "label": "Sub Heading"
+    },
+	{
+      "type": "image_picker",
+      "id": "quote_image",
+      "label": "Quote Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+		{
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review"
+        },
+		{
+          "type": "text",
+          "id": "buyer_name",
+          "label": "Buyer Name"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Product Reviews Slider",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

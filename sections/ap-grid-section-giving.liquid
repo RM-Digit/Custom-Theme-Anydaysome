@@ -1,0 +1,60 @@
+
+
+<div class="container-fluid ap-grid-section ap-grid-giving">
+  <div class="container">
+    
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-sm-10 col-md-12 col-lg-6 mt-4 d-flex align-items-center">
+        <!--  flex-row flex-md-row-reverse flex-lg-row-reverse -->
+        <div class="inner">
+          <h2 class="ap-grid-hdng">
+            {{ section.settings.ap_hdng }}
+          </h2>
+
+          <p class="ap-grid-para">
+            {{ section.settings.ap_short_info }}
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-10 col-md-12 col-lg-6 mt-4 d-flex align-items-center justify-content-center ap-grid-img">
+        <img src="{{ section.settings.grid_image | img_url: "large" }}">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Grid Giving Back",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "grid_image",
+      "label": "Upload Member Image"
+    },
+    {
+      "type": "text",
+      "id": "ap_hdng",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "ap_short_info",
+      "label": "Description"
+    }],
+  "presets": [{
+    "name": "Grid Giving Back",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

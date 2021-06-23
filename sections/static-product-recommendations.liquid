@@ -1,0 +1,100 @@
+
+
+ <h3 class="recommendations-title">
+  {{- section.settings.product_recommendations_heading -}}
+</h3>
+<div class="custom collection-products product-count-{{- section.settings.product_limit -}}">
+  {% for product in collections['all'].products limit: section.settings.product_limit%}
+  {% include 'product-list-item-custom.liquid', product: product %}
+  {% endfor %}
+
+</div>
+<div class="related-mobile-carousel__pagination-arrow related-mobile-carousel__pagination-arrow--prev" data-prev="">
+  <div class="slider-button">
+    <span class="icon ">
+      <svg width="100%" viewBox="0 0 24 24">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="currentColor"></path>
+      </svg>
+    </span>
+  </div>
+</div>
+<div class="related-mobile-carousel__pagination-arrow related-mobile-carousel__pagination-arrow--next" data-next="">
+  <div class="slider-button">
+    <span class="icon ">
+      <svg width="100%" viewBox="0 0 24 24">
+            <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"></path>
+      </svg>
+    </span>
+  </div>
+</div>
+{% if section.settings.show_product_recommendations %}
+
+  <script
+    type="application/json"
+    data-section-type="static-product-recommendations"
+    data-section-id="{{ section.id }}"
+    data-section-data
+  >
+    {
+      "settings": {
+        "limit": {{ section.settings.product_limit }}
+        },
+      "productId": {{ product.id | json }}
+    }
+  </script>
+
+  <section
+    class="recommended-products"
+    data-html
+    data-product-recommendations
+    >
+    <!-- {% for product in collections['all'].products%}
+
+
+    {% endfor %} -->
+    {% if recommendations.products_count > 0 %}
+      {% unless section.settings.product_recommendations_heading == blank %}
+        <h3 class="section-title">
+          {{- section.settings.product_recommendations_heading -}}
+        </h3>
+      {% endunless %}
+
+      <div class="collection-products product-count-{{- section.settings.product_limit -}}">
+        {% for product in recommendations.products limit: section.settings.product_limit %}
+          {% include 'product-list-item' %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Recommended products",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_product_recommendations",
+      "label": "Show dynamic recommendations",
+      "info": "Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "product_recommendations_heading",
+      "label": "Heading",
+      "default": "You may also like"
+    },
+    {
+      "type": "range",
+      "id": "product_limit",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Products",
+      "default": 2
+    }
+  ]
+}
+
+{% endschema %}

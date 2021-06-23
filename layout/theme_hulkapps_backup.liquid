@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js no-touch">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    {% if template == 'index' %}
+    <title>{{ shop.name }} | {{ page_title }}</title>
+    {% elsif template == '404' %}
+    <title>Page Not Found | {{ shop.name }}</title>
+    {% else %}
+    <title>{{ page_title }} | {{ shop.name }}</title>
+    {% endif %}
+
+    {% if settings.favicon %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+    {% endif %}
+
+    {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}" />
+    {% endif %}
+
+    {% if template contains 'collection' and current_tags %}
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="{{ shop.url }}{{ collection.url }}" />
+    {% else %}
+    <link rel="canonical" href="{{ canonical_url }}" />
+    {% endif %}
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    {{ content_for_header }}
+
+    <script>window.beans_cjs_id = '{{ customer.id }}'; window.beans_cjs_email = '{{ customer.email }}';</script> 
+
+
+    {% assign twitter_handle = settings.social_twitter_url | split: 'twitter.com/' | last %}
+    {%
+    include 'social-meta-tags',
+    twitter_handle: twitter_handle
+    %}
+
+    <!-- Theme CSS -->
+<!--     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+    {{ 'font-awesome.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+
+    <!-- Third Party JS Libraries -->
+    {{ 'modernizr-2.7.1.min.js' | asset_url | script_tag }}
+    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}  
+    {{ 'ap-style.css' | asset_url | stylesheet_tag }}
+    <meta name="google-site-verification" content="02GEeuZ7Xsh-iit7Glot9Vmm3YQVED3jXASwCllbnLI" />
+    <!-- Store object -->
+    {% include 'theme-options' %}
+    {% include 'talkable-partial' %}
+
+    {% render 'pagefly-header' %}
+   
+{% render 'pagefly-header' %}
+   <script src="https://shopoe.net/app.js"></script>
+{{shop.metafields.easycustomfield.custom_css_js}}
+    
+</head>  
+
+  <body class="template-{{ template | replace: '.', '-' | handle }} {% if customer %}customer-logged-in{% endif %}">
+    <script>
+      if(('ontouchstart' in window)||window.DocumentTouch&&document instanceof DocumentTouch)document.documentElement.className=document.documentElement.className.replace(/\bno-touch\b/,'has-touch');
+    </script>
+    <!--   {% section 'general-header' %} -->
+    {% section 'ap-header' %}
+
+    <main
+          class="main-content  {% if page.handle == 'home-test' or page.handle == 'faq' or page.handle == 'ourstory' or page.handle == 'brand' or page.handle == 'silkstretch™-fabric' or template == 'index' %} ap-fullWidth-container {% endif %}"
+          role="main"
+          data-main-content>
+
+      {% unless template contains 'index' or template contains 'product' %}
+      {% include 'breadcrumbs' %}
+      {% endunless %}
+
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'ap-footer' %}
+
+    <!-- Scripts -->
+    {{ 'jquery-1.10.0.min.js' | asset_url | script_tag }}
+    {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+
+    {% if template contains 'cart' %}
+    {{ '/services/javascripts/countries.js' | script_tag }}
+    {{ "shopify_common.js" | shopify_asset_url | script_tag }}
+    {{ 'jquery.cart.min.js' | asset_url | script_tag }}
+    {% endif %}
+
+    {% if template contains 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+    {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+    {% endif %}
+
+    {{ 'startup.js'  | asset_url | script_tag }}
+
+    {% include 'structured-data' %}
+
+    <script>
+      (function () {
+        function handleFirstTab(e) {
+          if (e.keyCode === 9) { // the "I am a keyboard user" key
+            document.body.classList.add('user-is-tabbing');
+            window.removeEventListener('keydown', handleFirstTab);
+          }
+        }
+        window.addEventListener('keydown', handleFirstTab);
+      })();
+    </script>
+    <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+    <script>
+      var klaviyo = klaviyo || [];
+      klaviyo.init({
+        account: "YjPN4N",
+        platform: "shopify"
+      });
+      klaviyo.enable("backinstock",{ 
+        trigger: {
+          product_page_text: "Notify Me When Available",
+          product_page_class: "btn",
+          product_page_text_align: "center",
+          product_page_margin: "0px",
+          replace_anchor: false
+        },
+        modal: {
+          headline: "{product_name}",
+          body_content: "Register to receive a notification when this item comes back in stock.",
+          email_field_label: "Email",
+          button_label: "Notify me when available",
+          subscription_success_label: "You're in! We'll let you know when it's back.",
+          footer_content: '',
+          additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+          drop_background_color: "#000",
+          background_color: "#fff",
+          text_color: "#222",
+          button_text_color: "#fff",
+          button_background_color: "#439fdb",
+          close_button_color: "#ccc",
+          error_background_color: "#fcd6d7",
+          error_text_color: "#C72E2F",
+          success_background_color: "#d3efcd",
+          success_text_color: "#1B9500"
+        }
+      });
+    </script>
+  {% render 'spurit_dmr_theme_snippet' %}
+{% render 'th-bundle-product' %}{% include 'mw_PO_objects' %}</body>
+</html>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();    
+    if (scroll >= 100) {
+      $(".ap-sticky-header").addClass("ap-fixed-header");
+    } else{
+      $(".ap-sticky-header").removeClass("ap-fixed-header");
+    }
+  });
+
+  $(document).ready(function(){
+    $(".ap-toggler").click(function(){
+      $(".ap-mobile-menu").toggleClass("left-0");
+    })
+
+    $(".ap-close-toggler").click(function(){
+      $(".ap-mobile-menu").toggleClass("left-0");
+    })
+
+    //     $(".dropdown-toggle").click(function(){
+    //       $(".dropdown-second-tier").toggleClass("opacVisible");
+    //     })
+
+    $(".dropdown-toggle").click(function(){
+       event.stopPropagation();
+      if($('.dropdown-second-tier').hasClass('opacVisible')){
+        $('.dropdown-second-tier').removeClass('opacVisible');
+        $('.dropdown-second-tier').addClass('opacInvisible');
+      }
+      else{
+        $('.dropdown-second-tier').removeClass('opacInvisible');
+        $('.dropdown-second-tier').addClass('opacVisible');
+      }
+
+    })
+
+
+  })
+  $(document).click(function (e) {
+    e.stopPropagation();
+    var container = $(".dropdown-toggle");
+
+    //check if the clicked area is dropDown or not
+    if (container.has(e.target).length === 0) {
+      $('.dropdown-second-tier').addClass('opacInvisible');
+      $('.dropdown-second-tier').removeClass('opacVisible');
+    }
+    else{
+      $('.dropdown-second-tier').removeClass('opacInvisible');
+      $('.dropdown-second-tier').addClass('opacVisible');
+    }
+  })
+
+
+</script>
+
+
+
+<!---- owl carousel for product page ----->
+<!---- owl carousel for product page ----->
+<!---- owl carousel for product page ----->
+  
+{{ 'owl.carousel.min.js' | asset_url | script_tag }}
+  
+
+  <script>
+    $(document).ready(function() {
+
+      var owl = $('#ap-review-slider');
+      owl.owlCarousel({
+        margin: 10,
+        autoplay: true,
+        nav: false,
+        dots: false,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+
+  </script>
+ <!------ end  ----->

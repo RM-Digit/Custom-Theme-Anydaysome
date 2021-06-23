@@ -1,0 +1,119 @@
+<div class="container-fluid ap-banner-faq" style="background: url('{{ section.settings.ap_faq_banner | img_url: '', crop: 'center' }}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>
+          {{ section.settings.banner_hdng }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid ap-faq-accord">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-md-10 col-lg-10">
+        <div class="accordion" id="accordionExample">
+
+          {% assign count = 1 %}
+          {% for block in section.blocks %}
+          <div class="card mb-4">
+            <div class="card-header" id="heading_{{ count }}">
+              <h2 class="mb-0"  data-toggle="collapse" data-target="#collapse_{{ count }}" aria-expanded="false" aria-controls="collapse_{{ count }}">
+                {{ block.settings.ap_hdng }}
+
+                <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/up-chevron.png?v=1598849839" class="down_chevron">
+              </h2>
+            </div>
+
+            <div id="collapse_{{ count }}" class="collapse " aria-labelledby="heading_{{ count }}" data-parent="#accordionExample">
+              <div class="card-body">
+                {{ block.settings.ap_subHdng }}
+              </div>
+            </div>
+          </div>
+          {% assign count = count | plus: 1 %}
+          {% endfor %}
+
+
+        </div>
+      </div>
+
+      <div class="col-12 ap-ftr-faq text-center mt-5">
+        <h4>Contact Us</h4>
+
+        <a class="ap-btn" href="mailto:{{ section.settings.user_mail}}">
+          Send an e-mail to {{ section.settings.user_mail}}
+        </a>
+
+
+        <p>Monday - Friday: 8 am - 5 pm CST</p>
+        
+        <p class="ap-social-icon">
+
+          <a href="https://www.instagram.com/anydaycasual/" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/logo.png">
+          </a>
+
+
+          <a href="https://www.facebook.com/anydaycasual/?modal=admin_todo_tour" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/facebook.png">
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+"name": "Faq Section",
+"settings": [
+{
+"type": "image_picker",
+"id": "ap_faq_banner",
+"label": "Upload Banner"	
+},
+{
+"type": "text",
+"id": "banner_hdng",
+"label": "Title"
+},
+{
+"type": "text",
+"id": "user_mail",
+"label": "Enter Your Email Here"
+}
+],
+"blocks": [
+{
+"type": "item",
+"name": "Item",
+"settings": [
+{
+"type": "text",
+"id": "ap_hdng",
+"label": "Question"
+},
+{
+"type": "textarea",
+"id": "ap_subHdng",
+"label": "Answer"
+}
+]
+}
+],
+"presets": [{
+"name": "Faq Section",
+"category": "Custom Sections"
+}]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

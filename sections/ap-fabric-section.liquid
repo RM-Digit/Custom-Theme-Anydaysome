@@ -1,0 +1,41 @@
+<div class="container-fluid ap-section-giving-01">
+  <div class="container">
+    <div class="row">
+      {% if section.settings.ap_hdng != '' %}
+      <div class="col-12 text-center">
+        <h1>
+          {{ section.settings.ap_hdng }}
+        </h1>
+      </div>
+      {% endif %}
+      <div class="col-12 text-center">
+        <h1>
+          {{ section.settings.ap_cntnt }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section Giving 01",
+    "settings": [
+    {
+      "type": "text",
+      "id": "ap_hdng",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "ap_cntnt",
+      "label": "Caption"
+    }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

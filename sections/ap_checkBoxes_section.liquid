@@ -1,0 +1,95 @@
+<div class="container-fluid ap_checkBox_section">
+  <div class="container">
+    
+    <div class="row mb-3">
+      <div class="col-12">
+        <img src="{{ section.settings.sct_img | img_url: '', crop: 'center' }}">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-4 col-sm-4 col-md-4">
+       	<!--- empty --->
+      </div>
+      
+      <div class="col-4 col-sm-4 col-md-4">
+        <p class="ap_subHdng">Traditional Brands</p>
+      </div>
+      
+      <div class="col-4 col-sm-4 col-md-4">
+		<p class="ap_subHdng">Anyday Casual</p>
+      </div>
+    </div>
+    
+    {% for block in section.blocks %}
+    <div class="row borderBottom0">
+      <div class="col-4 col-sm-4 col-md-4 ">
+        <h4 class="ap_hdng">
+        	{{ block.settings.ap_hdng }}
+        </h4>
+      </div>
+      
+      <div class="col-4 col-sm-4 col-md-4 text-center borderAP ">
+        {% if block.settings.ap_tradition %}
+		<img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/checkbox_black.png" class="tickImg">
+        {% endif %}
+      </div>
+      
+      <div class="col-4 col-sm-4 col-md-4 text-center borderAP borderAP-left0">
+        {% if block.settings.ap_anyday %}
+		<img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/checkbox_black.png" class="tickImg">
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+      "name": "checkboxes-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "sct_img",
+          "label": "Choose Image"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+		{
+          "type": "text",
+          "id": "ap_hdng",
+          "label": "Heading"
+        },
+		{
+		   "type": "checkbox",
+  		   "id": "ap_tradition",
+  		   "label": "Traditional Brand"
+		},
+		{
+		   "type": "checkbox",
+  		   "id": "ap_anyday",
+  		   "label": "Anyday Casual"
+		}
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "checkboxes-section",
+    "category": "Custom Sections"
+  }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

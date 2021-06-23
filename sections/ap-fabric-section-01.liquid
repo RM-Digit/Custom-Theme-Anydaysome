@@ -1,0 +1,40 @@
+<div class="container-fluid">
+<!--   <div class="container"> -->
+    <div class="row ap-fabric-banner">
+<!--       <div class="col-12">
+        <h1 class="ap-hdng">
+          {{ section.settings.banner_hdng }}
+        </h1>
+      </div> -->
+
+<!--       <div class="col-12 ap-fabric-bg" style="background-image: url( {{ section.settings.ap_banner | img_url: '', crop: 'center' }} )"> -->
+                <img src="{{ section.settings.ap_banner | img_url: '', crop: 'center' }}" class="w-100">
+<!--         <h1 class="ap-hdng" style="color:{{ section.settings.title_color }}">
+          {{ section.settings.banner_hdng }}
+        </h1> -->
+      </div>
+    </div>
+<!--   </div> -->
+</div>
+
+
+{% schema %}
+  {
+  "name": "Small Banner",
+  "settings": [
+	
+	{
+      "type": "image_picker",
+      "id": "ap_banner",
+      "label": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

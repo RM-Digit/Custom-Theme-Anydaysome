@@ -1,0 +1,324 @@
+{
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "カート",
+      "collections": "コレクション",
+      "page": "ページ {{ page }}",
+      "products": "プロダクツ",
+      "search": "サーチ",
+      "tags_html": "タグ付き \"{{ tags }}\""
+    }
+  },
+  "general": {
+    "404": {
+      "title": "ページが見つかりません",
+      "link": "ショッピングを続ける",
+      "subtext_html": "お探しのページは見つかりませんでした。 {{ link }}."
+    },
+    "accessibility": {
+      "nav_product_thumbnail": "サムネイル"
+    },
+    "general": {
+      "account": "アカウント",
+      "name": "名前",
+      "name_placeholder": "あなたの名前",
+      "email": "Eメール",
+      "email_placeholder": "your@email.com",
+      "message": "メッセージ",
+      "password": "パスワード",
+      "price": "価格",
+      "quantity": "数量",
+      "login": "ログイン",
+      "logout": "ログアウト",
+      "my_account": "マイアカウント",
+      "remove": "削除する",
+      "search_placeholder": "検索用語を入力してください",
+      "submit": "提出する",
+      "subtotal": "小計",
+      "total": "合計",
+      "subscribe": "サブスクライブする",
+      "copyright_text_html": "&copy; {{ year }}. 全著作権所有。"
+    },
+    "breadcrumbs": {
+      "home": "ホーム",
+      "collections": "コレクション",
+      "products": "製品",
+      "tagged": "タグ付き",
+      "all_products": "全製品"
+    },
+    "search": {
+      "header": "検索する",
+      "header_results": "の検索結果",
+      "no_articles": "「{{ search_terms }}」と一致する記事またはページは見つかりませんでした。",
+      "no_products": "「{{ search_terms }}」と一致する製品は見つかりませんでした。",
+      "no_results": "「{{ search_terms }}」の検索結果はありません。",
+      "pages": "ページ",
+      "products": "製品",
+      "results_text": "「{{ search_terms }}」の検索結果は {{ results_count }} {{ results }}です",
+      "results": {
+        "one": "結果",
+        "other": "活動成果"
+      },
+      "submit": "検索する"
+    },
+    "pagination": {
+      "summary": "{{ current_page }}\/{{ pages }}ページ",
+      "previous": "戻る",
+      "next": "進む"
+    },
+    "social": {
+      "title": "当店へはオンラインでアクセスしてください",
+      "share_title": "拡散希望！",
+      "byline": "当店の素晴らしい製品に関する情報の拡散をお願いします。",
+      "facebook": "共有",
+      "twitter": "Tweet",
+      "twitter_follow": "フォローする @{{ username }}",
+      "pinterest": "Pin it",
+      "fancy": "Fancy"
+    },
+    "mailing_list": {
+      "message": "サインアップしていただき有難うございます。"
+    }
+  },
+  "blogs": {
+    "blog": {
+      "empty": "このブログは空欄です！",
+      "posts_tagged": "タグ付きの投稿"
+    },
+    "article_item": {
+      "comment_pending": "あなたのコメントは送信されました。店舗からの承認後に投稿されます。",
+      "comment_posted": "あなたのコメントの投稿が完了しました！ページを更新してから閲覧してください",
+      "comment_count": {
+        "one": "コメント",
+        "other": "コメント"
+      },
+      "error_message": "エラー！問題が発生しました。",
+      "filed_under": "下に提出",
+      "tags": "タグ:",
+      "leave_comment": "コメントを残す:",
+      "posted_by": "投稿者",
+      "read_more": "続きを読む..."
+    }
+  },
+  "cart": {
+    "header": {
+      "product": "製品",
+      "price": "価格",
+      "quantity": "数量",
+      "total": "合計"
+    },
+    "item": {
+      "decrement": "数量を減らす",
+      "increment": "数量を増加する",
+      "quantity": "数量",
+      "remove": "削除する"
+    },
+    "general": {
+      "breadcrumbs": "カート",
+      "header": "あなたのカート",
+      "empty": "カートにはまだアイテムがありません。",
+      "continue": "ショッピングを続ける",
+      "instructions_title": "特別な指示",
+      "instructions_placeholder": "ノートを追加する",
+      "not_available": "ご利用いただけません",
+      "okay": "OK",
+      "stock_level": "申し訳ありませんが、在庫があるのは{{ stock_count }} のみとなっております。",
+      "tax_and_shipping": "税および配送料は除く",
+      "update_button": "住所を更新する",
+      "submit": "チェックアウト"
+    },
+    "shipping_calculator": {
+      "header": "配送料の計算",
+      "country": "国を選択",
+      "province": "都道府県を選択してください",
+      "province_select": "州",
+      "country_select": "国",
+      "zip_input": "郵便番号",
+      "error": "エラー: 郵便番号 {{ error_message }}",
+      "generic_error": "エラー: {{ error_message }}",
+      "submit": "計算する",
+      "working": "計算中",
+      "rates_html": "{{ address }}向けの配送料は{{ rate }}から{{ number_of_rates }}ご利用になれます。",
+      "rate": "{{ address }}向け、ご利用可能な配送料が1つ見つかりました",
+      "no_rates": "申し訳ありませんが、このお届け先には出荷いたしておりません",
+      "rate_values_html": "{{ rate }} で {{ rate_title }}"
+    }
+  },
+  "collections": {
+    "listing": {
+      "header": "コレクション"
+    },
+    "collection": {
+      "all_products": "全て",
+      "browse": "タグで閲覧",
+      "clear": "フィルターをクリアにする",
+      "no_products": "このコレクションには商品がありません"
+    },
+    "product_count": {
+      "one": "{{count}}アイテム",
+      "other": "{{count}}アイテム"
+    }
+  },
+  "contact": {
+    "general": {
+      "header": "お問い合わせ先",
+      "success": "ご連絡ありがとうございます。すぐにメッセージに返信します。",
+      "error": "エラーが生じたようです。以下のハイライト表示されたフィールドを訂正してください："
+    }
+  },
+  "customer": {
+    "general": {
+      "password_confirmation": "パスワードを再度入力してください",
+      "back_to_account": "アカウントに戻る",
+      "or": "又は",
+      "cancel": "取り消す"
+    },
+    "account": {
+      "logged_in_as_html": "{{ user_email }}としてログインしました",
+      "view_addresses": "住所を表示"
+    },
+    "orders": {
+      "order": "注文",
+      "payment_status": "支払い",
+      "fulfillment_status": "フルフィルメント",
+      "no_orders": "まだ注文していません。"
+    },
+    "activate_account": {
+      "header": "アカウントを有効にする",
+      "benefits": "アカウントにサインアップすれば、注文追跡と履歴を見たり、これからのご注文の際には、チェックアウト時に事前入力されたフォームをご利用になれます。",
+      "breadcrumb": "アカウントを有効にする",
+      "subtext": "アカウントを有効にするには、パスワードを選択して以下に入力してください。",
+      "decline": "招待を辞退",
+      "submit": "登録する"
+    },
+    "addresses": {
+      "header": "住所",
+      "add_new": "新しい住所を追加",
+      "default_address": "デフォルトの住所",
+      "new_address_link": "新住所",
+      "no_address_html": "アカウントに保存されている住所はありません。 {{ new_address_link }}を追加して、購入手続きをスピードアップしましょう。",
+      "edit": "編集する",
+      "delete": "削除する",
+      "first_name": "名前",
+      "last_name": "苗字",
+      "company": "会社",
+      "address1": "住所1",
+      "address2": "住所2",
+      "city": "市",
+      "country": "国",
+      "phone": "電話",
+      "province": "州",
+      "zip": "郵便番号",
+      "set_as_default": "デフォルト設定?"
+    },
+    "login": {
+      "header": "お客様ログイン",
+      "forgot_password": "パスワードをお忘れですか？",
+      "error": "ごめんなさい！もう一度お試しください。",
+      "new_customer": "新規のお客様ですか？",
+      "sign_up": "アカウントにサインアップ"
+    },
+    "register": {
+      "header": "登録する"
+    },
+    "reset_password": {
+      "header": "パスワードを再設定する",
+      "breadcrumb": "パスワードを再設定する",
+      "error": "お客様のパスワードのリセット中にエラーが生じました。再度お試しください。",
+      "new_password_for": "{{ email }}の新しいパスワードを入力してください",
+      "submit": "リセット",
+      "subtext": "パスワードをリセットするためのメールをお送りします。",
+      "successful_reset": "お客様宛にEメールでパスワードのリセット用リンクを送信いたしました。Eメールを受信する前にパスワードを思い出した場合は、以下からログインしていただけます。"
+    },
+    "guest_login": {
+      "no_login": "ログインは必要ありません。",
+      "checkout_as_guest": "ゲストとしてチェックアウトを続行します。"
+    },
+    "order": {
+      "header": "注文 {{ order_number }}",
+      "billing_address": "請求先住所",
+      "shipping_address": "お届け先の住所",
+      "shipping": "発送",
+      "fulfillment_status": "フルフィルメントステータス",
+      "tax": "税金"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "{{ shop }}の{{ value }}ギフトカードをどうぞ！",
+      "subtext": "これがギフトカードです！",
+      "disabled": "無効",
+      "expired": "{{ expiry }}に期限切れ",
+      "active": "{{ expiry }}に期限切れ",
+      "redeem": "チェックアウト時にこのコードを使用してギフトカードを利用します",
+      "shop_link": "ショッピングを始める",
+      "print": "印画",
+      "balance": "{{ balance }} 左"
+    }
+  },
+  "password": {
+    "general": {
+      "opening_soon": "今すぐオープンします",
+      "password_caption_html": "パスワードをお持ちですか？{{ trigger }}",
+      "enter_password": "パスワードを入力する",
+      "cancel": "取り消す",
+      "submit": "提出する",
+      "subscribe": "サブスクライブする",
+      "subscribe_form_success": "サインアップしていただき有難うございます。"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "カートに追加",
+      "added_to_cart": "カートに追加済み",
+      "buy_now": "今すぐ購入する",
+      "from": "より",
+      "set_quantity": "数量を入力してください。",
+      "on_sale": "発売中",
+      "processing": "処理中…",
+      "sold_out": "完売",
+      "stock_level": "残り{{ stock_count }}のみです！",
+      "cart_link": "カート",
+      "continue_link": "ショッピングを続ける",
+      "checkout_link": "チェックアウト",
+      "success_html": "** product **が{{ cart_link }}に正常に追加されました。 {{ continue_link }}または{{ checkout_link }}までお気軽にどうぞ。",
+      "unavailable": "無効",
+      "no_image_available": "画像はご利用いただけません",
+      "unit_price_html": "{{total_quantity}} | {{unit_price}} \/ {{unit_measure}}",
+      "tax_line_html": ""
+    },
+    "media": {
+      "view_in_your_space": "あなたの空間で見る"
+    }
+  },
+  "onboarding": {
+    "general": {
+      "theme_settings_link": "Theme settings"
+    },
+    "blog": {
+      "title": "Your post's title",
+      "excerpt": "Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog."
+    },
+    "collection": {
+      "title": "Collection title"
+    },
+    "featured_product": {
+      "title": "Product title",
+      "description": "Tell customers about the look, feel, and style of your product. Add details on color, materials, sizing, and where it was made.",
+      "vendor": "Product vendor"
+    },
+    "featured_collection": {
+      "product_title": "Product title",
+      "product_vendor": "Product vendor"
+    },
+    "twitter": {
+      "tweet": "Connect your Twitter account to engage customers on and off your site!",
+      "username": "youraccount"
+    }
+  },
+  "date_formats": {
+    "short_month": "%b %d, %Y",
+    "long_month": "%B %d, %Y",
+    "gift_card_expiry": "%d\/%m\/%y"
+  }
+}

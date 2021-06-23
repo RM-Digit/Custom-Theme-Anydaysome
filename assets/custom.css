@@ -1,0 +1,195 @@
+@media (min-width: 719px){
+    .product-gallery{
+        width:65%;
+        padding:0;
+    }
+    .product-wrap{
+        width:35%;
+        padding-left: 0;
+    }
+    .product-wrap .product-details .product-title, .product-gallery .product-details .product-title{
+        width:100%;
+    }
+    .product-grid{
+        width:50%;
+    }
+    .recommendations-title{
+        margin-top: 50px;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: -1px;
+        line-height: .9em;
+        color: #000;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif !important;
+        padding: 10px 0px;
+        text-transform: capitalize;
+        font-style: normal;
+    }
+    .slidecart_item{
+        padding: 5px 10px!important;
+        margin: 0 10px!important;
+    }
+    .related-mobile-carousel__pagination-arrow,.mobile-carousel__pagination-arrow {
+        display: none!important;;
+        
+    }
+  
+}
+
+.product-grid-container{
+    padding: 0;
+    text-align: center;
+}
+.product-grid{
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}
+
+.color-swatch>a>span {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 3px 5px;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 30%);
+}
+.color-swatch>a>span>div {
+    width: 26px;
+    height: 26px;  
+    border-radius: 50%;
+}
+.swatch-item.black>div{
+    background-color: black;
+}
+.swatch-item.white>div{
+    background-color: white;
+}
+.swatch-item.birch>div{
+    background-color: #ba7f55;
+}
+.custom.collection-products{
+    display:flex;
+    margin-top: 30px;
+}
+.slidecart_msg_container{
+    background-color: #f2f1ec!important;
+    margin: 0 30px!important;
+    padding: 10px 0!important;
+}
+.slidecart_msg_container>.slidecart_item:first-child{
+    padding: 5px 10px!important;
+    border-bottom: 1px solid black!important;
+    border-bottom-style: dotted!important;
+    margin: 0 10px!important;
+}
+div#slidecarthq .header{
+    font-size: 32px;
+}
+@media (max-width: 719px){
+    .recommendations-title{
+        margin-top: 30px;
+    }
+    .custom.collection-products{
+        display:block;
+       
+    }
+    div#shopify-section-static-product-recommendations{
+        position: relative;
+    }
+    
+    .product-gallery{
+        position: relative;
+    }
+    .product-list-item-thumbnail .product-list-item-image{
+        margin: 0;
+    }
+    .product-grid{
+        width: 100%;
+    }
+   
+    .recommendations-title{
+        font-size: 24px;
+        text-align: center;
+        color:black;
+    }
+    .custom.collection-products{
+        padding:0;
+    }
+    .slidecart_item{
+        padding: 5px 10px!important;
+        margin: 0 10px!important;
+    }
+    .custom.collection-products{
+        margin-bottom: 0;
+    }
+    .related-mobile-carousel__pagination-arrow,.mobile-carousel__pagination-arrow {
+        display:block;
+        width: 10%;
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        background-color: white;
+        box-shadow: 0px 2px 4px rgb(26 26 26 / 10%), 0px 1px 2px rgb(0 0 0 / 12%);
+    }
+    .related-mobile-carousel__pagination-arrow{
+        top:40%;
+    }
+    .related-mobile-carousel__pagination-arrow.related-mobile-carousel__pagination-arrow--next ,.mobile-carousel__pagination-arrow.mobile-carousel__pagination-arrow--next {
+        right: 0;
+    }
+    .related-mobile-carousel__pagination-arrow.related-mobile-carousel__pagination-arrow--prev ,.mobile-carousel__pagination-arrow.mobile-carousel__pagination-arrow--prev {
+        left: 0;
+    }
+}
+span.input-field-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+span.input-field-title>a{
+    font-weight: 300;
+}
+.tooltip-custom {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-custom .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip-custom .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip-custom:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .container-fluid.mwpl-grid{
+      padding-bottom: 0;
+  }

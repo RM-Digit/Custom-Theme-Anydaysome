@@ -1,0 +1,41 @@
+<div class="container-fluid ap-small-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="ap-hdng">
+          {{ section.settings.banner_hdng }}
+        </h1>
+      </div>
+      
+      <div class="col-12 mt-5 text-center" >
+        <img src="{{ section.settings.ap_banner | img_url: '', crop: 'center' }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Bottom Section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "banner_hdng",
+      "label": "Title"
+    },
+	{
+      "type": "image_picker",
+      "id": "ap_banner",
+      "label": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

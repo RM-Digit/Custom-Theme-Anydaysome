@@ -1,0 +1,144 @@
+<div class="container-fluid ap-grid-section p-0">
+  <img src="{{ section.settings.grid_head_image | img_url: '', crop: 'center' }}" class="w-100">
+  <h1>{{section.settings.grid_head_text}}</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 mb-sm-5">
+        <div class="inner text-center">
+          <p class="ap-subHdng intro">
+            {{ section.settings.grid_caption }}
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="container-fluid ap-grid-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 mb-sm-5">
+        <div class="grid-inner text-center">
+          <h2>{{ section.settings.grid_heading }}</h2>
+        </div>
+      </div>
+    </div>
+    {% assign count = 1 %}
+    {% for block in section.blocks %}
+    {% assign evens = count | modulo: 2 %}
+    <div class="row d-flex justify-content-center {% if evens == 0 %}flex-row flex-md-row-reverse flex-lg-row-reverse {% endif %}">
+      <div class="col-12 col-sm-10 col-md-6 mt-4 d-flex align-items-center">
+        <!--  flex-row flex-md-row-reverse flex-lg-row-reverse -->
+        <div class="inner">
+          <h2 class="ap-grid-hdng">
+            {{ block.settings.ap_hdng }}
+          </h2>
+
+          <p class="ap-grid-para para">
+            {{ block.settings.ap_short_info }}
+          </p>
+
+          <ul class="ap-grid-list">
+            <li style="background-image: url({{ block.settings.ap_point_01_Icon | img_url: "large" }});">
+              {{ block.settings.ap_point_01 }}
+            </li>
+
+            <li style="background-image: url({{ block.settings.ap_point_02_Icon | img_url: "large" }});">
+              {{ block.settings.ap_point_02 }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-10 col-md-6 mt-4 d-flex align-items-center">
+        <img src="{{ block.settings.grid_image | img_url: "large" }}">
+      </div>
+    </div>
+     {% assign count = count | plus: 1 %}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Grid",
+  "settings": [
+	{
+      "type": "image_picker",
+      "id": "grid_head_image",
+      "label": "Upload Header Image"
+    },
+	{
+      "type": "text",
+      "id": "grid_head_text",
+      "label": "Header Text"
+    },
+	{
+      "type": "text",
+      "id": "grid_caption",
+      "label": "Caption"
+    },
+	{
+      "type": "text",
+      "id": "grid_heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "grid_image",
+          "label": "Upload Member Image"
+        },
+		{
+          "type": "text",
+          "id": "ap_hdng",
+          "label": "Heading"
+        },
+		{
+          "type": "textarea",
+          "id": "ap_short_info",
+          "label": "Description"
+        },
+		{
+          "type": "text",
+          "id": "ap_point_01",
+          "label": "Point 1"
+        },
+		{
+          "type": "image_picker",
+          "id": "ap_point_01_Icon",
+          "label": "Point Icon"
+        },
+		{
+          "type": "text",
+          "id": "ap_point_02",
+          "label": "Point 2"
+        },
+		{
+          "type": "image_picker",
+          "id": "ap_point_02_Icon",
+          "label": "Point Icon"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Grid",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

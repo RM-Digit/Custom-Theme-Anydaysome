@@ -1,0 +1,76 @@
+
+
+<div class="container-fluid ap-grid-section ap-grid-giving pt-0">
+  <div class="container">
+
+    <div class="row d-flex justify-content-center  flex-lg-row flex-sm-column-reverse flex-column-reverse">
+
+      <div class="col-12 col-sm-10 col-md-12 col-lg-6 mt-4 d-flex align-items-center">
+        <div class="tf-home-shoe-and-circle">
+
+          <div class="shoe-and-circle__container">
+            <div class="shoe-and-circle__background1">
+              <div class="shoe-and-circle__background2">
+<!--                 <div class="shoe-and-circle__background3">
+                  <div class="shoe-and-circle__background4">
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="shoe-and-circle__content">
+              <h2 class="shoe-and-circle__circle__top">THE PERFECT SHIRT FOR ANYDAY</h2>
+              <h3 class="shoe-and-circle__circle__middle">
+                CLOTHING THAT WILL NEVER SHED ANOTHER MICRO-PLASTIC INTO OUR OCEANS <br><br>
+                WHILE YOUR BUSY MAKING A DIFFERENCE WE’LL BE HERE TO SUPPORT YOU EVERY STEP OF THE WAY</h3>
+              <h4 class="shoe-and-circle__circle__bottom">Are you ready to join us?</h4>
+              <a class="shoe-and-circle__circle__button tf-btn" href="https://www.anydaycasual.com/collections/t-shirt">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-12 col-lg-6 mt-4 d-flex align-items-center">
+        <!--  flex-row flex-md-row-reverse flex-lg-row-reverse -->
+        <div class="inner">
+          <h2 class="ap-grid-hdng">
+            {{ section.settings.ap_hdng }}
+          </h2>
+
+          <p class="ap-grid-para">
+            {{ section.settings.ap_short_info }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Grid Giving Back",
+  "settings": [
+    {
+      "type": "text",
+      "id": "ap_hdng",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "ap_short_info",
+      "label": "Description"
+    }],
+  "presets": [{
+    "name": "Grid Giving Back",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

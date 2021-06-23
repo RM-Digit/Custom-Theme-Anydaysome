@@ -1,0 +1,281 @@
+<div class="container-fluid ap-footer-section ">
+  <div class="container">
+ 	<div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 footer-order-mb-3">
+        <div class="inner">
+          {% if section.settings.footer_logo %}
+          <img src=" {{ section.settings.footer_logo | img_url: '', crop: 'center' }} " class="ap-footer-logo">
+          {% endif %}
+          <p class="ap-social-icon">
+            {% if section.settings.social_instagram!='' %}
+              <a href="{{ section.settings.social_instagram }}">
+                <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/logo.png">
+              </a>
+            {% endif %}
+            {% if section.settings.social_facebook!='' %}
+              <a href="{{ section.settings.social_facebook }}">
+                <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/facebook.png">
+              </a>
+            {% endif %}
+            {% if section.settings.social_twitter!='' %}
+              <a href="{{ section.settings.social_twitter }}">
+                <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/twitter.png">
+              </a>
+            {% endif %}
+            {% if section.settings.social_linkedin!='' %}
+              <a href="{{ section.settings.social_linkedin }}">
+                <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/linkedin.png">
+              </a>
+            {% endif %}
+            {% if section.settings.social_pinterest!='' %}
+              <a href="{{ section.settings.social_pinterest }}">
+                <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/pinterest.png">
+              </a>
+            {% endif %}
+          </p>
+          
+          <p class="ap-hash">#SustainabilityMeetsStyle</p>
+           <p class="iconIMG d-sm-none">
+          {% if section.settings.partner_one %}
+          <img src=" {{ section.settings.partner_one | img_url: '', crop: 'center' }} " class="ap-footer-logo">
+          {% endif %}
+          {% if section.settings.partner_two %}
+          <img src=" {{ section.settings.partner_two | img_url: '', crop: 'center' }} " class="ap-footer-logo">
+          {% endif %}
+        </p>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 footer-order-mb-2">
+        
+        <div class="row">
+          {% for i in (1..3) %}
+            {% capture menu %}menu_{{ i }}{% endcapture %}
+            {% if menus[section.settings[menu]].links.size > 0 %}
+              {% capture menu %}{{ section.settings[menu] }}{% endcapture %}
+              <div class="col-6 col-sm-6 col-md-3 ap-footer-menu">
+                {% if section.settings.show_menu_heading %}
+                  <h5 class="ap-hdng">{{ menus[menu].title }}</h5>
+                {% endif %}
+				<div>
+                  <ul>
+                    {% for link in menus[menu].links %}
+                      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+          	  </div>
+            {% endif %}
+          {% endfor %}
+          
+          <div class="col-6 col-sm-6 col-md-3 ap-footer-menu">
+            <h5 class="ap-hdng">
+            Explore
+            </h5>
+            
+            <ul>
+            {% if section.settings.social_instagram!='' %}
+                <li>
+                <a href="{{ section.settings.social_instagram }}">
+                  Instagram
+                </a>
+                </li>
+            {% endif %}
+            {% if section.settings.social_facebook!='' %}
+              <li>
+              <a href="{{ section.settings.social_facebook }}">
+                Facebook
+              </a>
+              </li>
+            {% endif %}
+            {% if section.settings.social_twitter!='' %}
+              <li>
+              <a href="{{ section.settings.social_twitter }}">
+                Twitter
+              </a>
+              </li>
+            {% endif %}
+            {% if section.settings.social_linkedin!='' %}
+              <li>
+              <a href="{{ section.settings.social_linkedin }}">
+                Linkedin
+              </a>
+              </li>
+            {% endif %}
+            {% if section.settings.social_pinterest!='' %}
+              <li>
+              <a href="{{ section.settings.social_pinterest }}">
+                Pinterest
+              </a>
+              </li>
+            {% endif %}
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3  ap-footer-form footer-order-mb-1">
+        <h5 class="ap-hdng">
+          Stay in Loop
+        </h5>
+        {% form 'customer' %}
+
+        {{ form.errors | default_errors }}
+
+        {% if form.posted_successfully? %}
+          <div class="newsletter-message">
+            <p>{{ 'general.mailing_list.message' | t }}</p>
+          </div>
+        {% else %}
+          {%- capture tags -%}
+            {%- unless template contains 'password' %}
+              newsletter
+            {%- else -%}
+              prospect, password page
+            {%- endunless -%}
+          {%- endcapture -%}
+		<div class="input-group mb-2">
+          <input type="hidden" id="contact_tags" name="contact[tags]" value="{{ tags | strip }}">
+
+          <input
+            class="form-control"
+            name="contact[email]"
+            type="email"
+            placeholder="{{ 'general.general.email_placeholder' | t }}">
+
+          <button
+              class="input-group-text"
+              type="submit"
+              value="{{ 'general.general.subscribe' | t }}">
+            <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/chevron.png">
+            </button>
+        </div>
+        {% endif %}
+
+      {% endform %}
+        
+        
+        <p class="iconIMG d-none d-sm-block">
+          {% if section.settings.partner_one %}
+          <img src=" {{ section.settings.partner_one | img_url: '', crop: 'center' }} " class="ap-footer-logo">
+          {% endif %}
+          {% if section.settings.partner_two %}
+          <img src=" {{ section.settings.partner_two | img_url: '', crop: 'center' }} " class="ap-footer-logo">
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container ap-footer-bottom">
+    <p>
+      Need further assistance contact <a href="mailto:{{section.settings.ap_email}}">{{section.settings.ap_email}}</a>
+    </p>
+  </div>
+</div>
+<script data-cfasync="false">window.ju_num="81E6A118-FA0C-4308-9788-AC662A23422F";window.asset_host='//cdn.jst.ai/';(function(i,s,o,g,r,a,m){i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script',asset_host+'vck.js','juapp');</script>
+{% schema %}
+  {
+  "name": "Footer Section",
+  "settings": [
+   {
+      "type": "header",
+      "content": "Logo"
+    },
+	{
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Logo"
+    },
+	{
+      "type": "header",
+      "content": "Social Links"
+    },
+	{
+      "type": "text",
+      "id": "social_facebook",
+      "label": "Facebokk"
+    },
+	{
+      "type": "text",
+      "id": "social_twitter",
+      "label": "Twitter"
+    },
+	{
+      "type": "text",
+      "id": "social_instagram",
+      "label": "Instagram"
+    },
+	{
+      "type": "text",
+      "id": "social_linkedin",
+      "label": "Linkedin"
+    },
+	{
+      "type": "text",
+      "id": "social_pinterest",
+      "label": "Pinterest"
+    },
+ 	{
+      "type": "header",
+	  "content": "Footer Menu Section"
+    },
+	{
+      "type": "checkbox",
+      "id": "show_menu_heading",
+      "label": "Show menu headings",
+      "default": true
+    },
+	{
+      "type": "link_list",
+      "id": "menu_1",
+      "label": "Menu 1"
+    },
+	{
+      "type": "link_list",
+      "id": "menu_2",
+      "label": "Menu 2"
+    },
+	{
+      "type": "link_list",
+      "id": "menu_3",
+      "label": "Menu 3"
+    },
+	{
+      "type": "header",
+      "content": "Partners Logo"
+    },
+	{
+      "type": "image_picker",
+      "id": "partner_one",
+      "label": "Partner One"
+    },
+	{
+      "type": "image_picker",
+      "id": "partner_two",
+      "label": "Partner Two"
+    },
+	{
+      "type": "header",
+      "content": "Bottom Footer"
+    },
+	{
+      "type": "text",
+      "id": "ap_email",
+      "label": "Instagram"
+    }
+  ],
+  "presets": [{
+    "name": "Section 1",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

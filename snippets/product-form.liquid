@@ -1,0 +1,152 @@
+{% comment %}
+@param product {object}
+(Required) Contains product information
+
+@param hide_shoppad {bool}
+Hide Shoppad integrations
+
+@param add_to_cart_override {string}
+Pass an optional string to override the 'Add to cart' button
+
+@param form_id {number}
+Pass an optional number to override the form id
+{% endcomment %}
+
+{% unless form_id %}
+{% assign form_id = product.id %}
+{% endunless %}
+
+<div
+     class="
+            product-form
+            {% if section.settings.show_spb %}product-form-has-spb{% endif %}
+            {% if product.selected_or_first_available_variant.available == false %}product-form-outofstock{% endif %}
+            "
+     >
+  {% assign product_form_id = 'product-form-' | append: form_id %}
+
+  {% assign product_form_id = product_form_id | strip_newlines %}
+
+  {% if product != blank %}
+  {%
+      form 'product',
+  product,
+  id: product_form_id,
+  data-product-form: form_id
+  %}
+  <div class="color-swatch">
+    <div class="swatch-option-name" style="font-weight: 600;font-style: normal;font-size: 16px;margin-bottom: 10px;">Colors</div>
+      <a class="tooltip-custom" href="/products/white"> <span class="swatch-item white"><div></div></span> <span class="tooltiptext">White</span></a>
+      <a class="tooltip-custom" href="/products/black-silkstretch-curved-hem-t-shirtblack"><span class="swatch-item black"><div></div></span> <span class="tooltiptext">Black</span></a>
+      <a class="tooltip-custom" href="/products/birch-silkstretch-curved-hem-t-shirt-men"><span class="swatch-item birch"><div></div></span> <span class="tooltiptext">Birch</span></a>
+  </div>
+  {% unless section_onboarding %}
+  {% if product.variants.size > 1 %}
+  <div class="product-options">
+    {% if section.settings.variants_style == 'select' %}
+    {% include 'product-options-dropdown' %}
+    {% else %}
+    {% include 'product-options-radio' %}
+    {% endif %}
+
+    <div class="selector-wrapper no-js-required">
+      <label for="product-select-{{ form_id }}"></label>
+      <select
+              class="product-select"
+              name="id"
+              id="product-select-{{ form_id }}">
+        {% for variant in product.variants %}
+        {%- capture option_content -%}
+        {%- if variant.available -%}
+        {{ variant.title }}
+        {%- else -%}
+        {{ variant.title }}
+        {%- endif -%}
+        {%- endcapture -%}
+        <option
+                {% if variant.id == selected_variant.id %}selected="selected"{% endif %}
+                data-variant-id="{{ variant.id }}"
+                {% if variant.available %}
+                data-sku="{{ variant.sku }}"
+                value="{{ variant.id }}"
+                {% else %}
+                disabled="disabled"
+                {% endif %}>
+          {{ option_content | strip_newlines }}
+        </option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  {% else %}
+  <input
+         class="product-select"
+         name="id"
+         value="{{ product.variants[0].id }}"
+         type="hidden"
+         data-variant-title="{{ product.variants[0].title }}" />
+  {% endif %}
+  {% endunless %}
+
+  {% unless hide_shoppad %}
+  <div id="infiniteoptions-container"></div>
+  <div id="uploadery-container"></div>
+  {% endunless %}
+
+  <div id="hulkapps_custom_options_{{ product.id }}"></div>
+  <div class="text-center pk-product-txt">
+    <h3>BUNDLE ANY 2 OR MORE TO GET 20% OFF AT CHECKOUT.</h3>
+  </div>
+
+  <div
+       class="
+              input-wrapper product-quantity
+              {% if section.settings.show_spb %}
+              smart-payments
+              {% endif %}
+              "
+       >
+    <div class="product-quantity-container">
+      {% unless section_onboarding %}
+      <label
+             class="product-quantity-label"
+             for="quantity">
+        {{ 'general.general.quantity' | t }}
+      </label>
+      <input
+             class="input-field product-quantity-input"
+             type="text"
+             name="quantity"
+             value="1">
+      {% endunless %}
+
+      <div class="add-to-cart">
+        {% if product.available %}
+        <div class="product-form-submit-wrap">
+          {% assign add_to_cart_text = 'products.product.add_to_cart' | t %}
+          {% if add_to_cart_override %}
+          {% assign add_to_cart_text = add_to_cart_override %}
+          {% endif %}
+          <input class="button" type="submit" value="{{ add_to_cart_text }}" />
+          <div class="add-to-cart-loader"></div>
+        </div>
+
+        {% if section.settings.show_spb %}
+        {{ form | payment_button }}
+        {% endif %}
+        {% else %}
+        <input
+               class="button disabled"
+               type="button"
+               disabled="disabled"
+               value="{{ 'products.product.sold_out' | t }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endform %}
+  <!--     <div class="product-cart-message" data-product-message></div> -->
+
+  {% endif %}
+</div>
+<!-- <div class="" data-product-message></div> -->

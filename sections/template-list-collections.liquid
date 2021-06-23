@@ -1,0 +1,46 @@
+<script
+  type="application/json"
+  data-section-type="static-list-collections"
+  data-section-id="{{ section.id }}"
+></script>
+
+<h1 class="page-title page-collection">
+  {{ 'collections.listing.header' | t }}
+</h1>
+
+{% assign using_linklist = false %}
+{% if linklists['all-collections'] and linklists['all-collections'].links.size > 0 %}
+  {% assign using_linklist = true %}
+{% endif %}
+
+{% paginate collections by 15 %}
+  <div class="collections-list">
+    {% if using_linklist %}
+      {% for link in linklists['all-collections'].links %}
+        {% include 'collection-list-item' with 'linklist' %}
+      {% endfor %}
+    {% else %}
+      {% for collection in collections %}
+        {% include 'collection-list-item' %}
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  {% if paginate.previous or paginate.next and using_linklist == false %}
+    {% include 'pagination' %}
+  {% endif %}
+{% assign dm_paginate_by = paginate.page_size %}{% endpaginate %}
+
+{% if dm_paginate_by %}{% render 'spurit_dmr_collection_template_snippet', paginate_by: dm_paginate_by %}{% endif %}{% schema %}
+{
+  "name": "Collection list page",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show collection descriptions",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

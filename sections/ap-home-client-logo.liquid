@@ -1,0 +1,50 @@
+<div class="container-fluid ap-grid-home ap-section-giving-01">
+  <div class="container">
+    <div class="row pT-60 text-center">
+      <div class="col-12 ">
+        <h1>{{ section.settings.hdng }}</h1>
+      </div>
+      {% for block in section.blocks %}
+      <div class="col-3 publction-logo">
+        <img src="{{ block.settings.client_logo | img_url: '', crop: 'center' }}" class="ap-client-logo">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Clients Logo",
+	"max_blocks": 4,
+    "settings": [
+	{
+    "type": "text",
+    "id": "hdng",
+    "label": "Heading"
+	}
+	],
+	"blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "client_logo",
+          "label": "upload client logo"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Clients Logo",
+    "category": "Custom Sections"
+  }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

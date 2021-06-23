@@ -1,0 +1,138 @@
+<div class="container-fluid ap-heading-section">
+  <div class="row">
+    <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/The-AnydayCasual-Difference_1.jpg?v=1603373914" class="w-100">
+  </div>
+  
+<!--   <div class="container">
+     style="background-image:url(https://cdn.shopify.com/s/files/1/0457/8698/8697/files/daf56164-3a7e-446e-960e-0c34d13f1ae8.jfif?v=1598261422);"
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-sm-12 col-md-12 mb-4">
+        <div class="inner text-center">
+          <h1 class="ap-hdng">
+            {{ section.settings.main_title }}
+          </h1>
+        </div>
+      </div>      
+    </div> -->
+    
+<!--     <div class="row d-flex justify-content-center d-sm-none">
+
+      <div class="col-12 col-sm-10 col-md-9 col-lg-4 mt-3">
+        <div class="inner">
+          <figure class="ap-figure">
+			<img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/kisspng-washing-machines-home-appliance-washing-machine-cartoon-5b5760c9112aa1-removebg-preview.png">
+            <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/TUOk.gif" class="ap-gif-img">
+          </figure>
+        </div>
+      </div>
+      
+      <div class="col-12 col-sm-10 col-md-9 col-lg-4 mt-3">
+        <div class="inner">
+          <h5 class="ap-list-hdng">
+            {{ section.settings.left_sec_hdng }}
+          </h5>
+          
+          <ul class="ap-list">
+            {{ section.settings.left_sec_List }}
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-9 col-lg-4 mt-3">
+        <div class="inner pl-50">
+          <h5 class="ap-list-hdng">
+            {{ section.settings.right_sec_hdng }}
+          </h5>
+
+          <ul class="ap-list">
+            {{ section.settings.right_sec_List }}
+          </ul>
+        </div>
+      </div>
+
+    </div> -->
+    
+<!--     <div class="row justify-content-center d-none d-sm-flex">
+      <div class="col-12 col-sm-10 col-md-9 col-lg-4 mt-3 left">
+        <div class="inner">
+          <h2 class="ap-list-hdng">
+            {{ section.settings.left_sec_hdng }}
+          </h2>
+          
+          <ul class="ap-list">
+            {{ section.settings.left_sec_List }}
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-9 col-lg-4 mt-3 middle">
+        <div class="inner"> -->
+<!--           <figure class="ap-figure">
+			<img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/kisspng-washing-machines-home-appliance-washing-machine-cartoon-5b5760c9112aa1-removebg-preview.png">
+            <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/TUOk.gif" class="ap-gif-img">
+          </figure> -->
+<!--         </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-9 col-lg-4 mt-3 right">
+        <div class="inner pl-50">
+          <h2 class="ap-list-hdng">
+            {{ section.settings.right_sec_hdng }}
+          </h2>
+
+          <ul class="ap-list">
+            {{ section.settings.right_sec_List }}
+          </ul>
+        </div>
+      </div> 
+
+    </div>-->
+  </div>
+
+
+
+{% schema %}
+  {
+  "name": "Heading Section",
+  "settings": [
+	{
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title"
+    },
+	{
+      "type": "text",
+      "id": "left_sec_hdng",
+      "label": "Left Hdng"
+    },
+	{
+      "type": "textarea",
+      "id": "left_sec_List",
+      "label": "Left List",
+	  "placeholder": "<li> Enclosed with in li Tag </li>"
+    },
+	{
+      "type": "text",
+      "id": "right_sec_hdng",
+      "label": "Right Hdng"
+    },
+	{
+      "type": "textarea",
+      "id": "right_sec_List",
+      "label": "Right List",
+	  "placeholder": "<li> Enclosed with in li Tag </li>"
+    }
+  ],
+  "presets": [{
+    "name": "Section 1",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

@@ -1,0 +1,51 @@
+<div class="container-fluid ap-small-banner">
+  <div class="container">
+    <div class="row">
+      {% if section.settings.banner_silk %}
+      <div class="col-12">
+          <img src="{{ section.settings.banner_silk | img_url: '', crop: 'center' }}" class="w-100">  
+      </div>
+      {% endif %}
+      <div class="col-12 mt-5 text-center" >
+        <figure class="ap-jadugari">
+        	<img src="{{ section.settings.ap_banner_silk | img_url: '', crop: 'center' }}">
+          
+          <a href="#ap-sec-01" class="ap-reach-icon ap-reach-icon-01"></a>
+          <a href="#ap-sec-02" class="ap-reach-icon ap-reach-icon-02"></a>
+          <a href="#ap-sec-03" class="ap-reach-icon ap-reach-icon-03"></a>
+          <a href="#ap-sec-04" class="ap-reach-icon ap-reach-icon-04"></a>
+          <a href="#ap-sec-05" class="ap-reach-icon ap-reach-icon-05"></a>
+          <a href="#ap-sec-06" class="ap-reach-icon ap-reach-icon-06"></a>
+          <a href="#ap-sec-07" class="ap-reach-icon ap-reach-icon-07"></a>
+          <a href="#ap-sec-08" class="ap-reach-icon ap-reach-icon-08"></a>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Shirt Image Section",
+  "settings": [
+	{
+      "type": "image_picker",
+      "id": "banner_silk",
+      "label": "Heading"
+    },
+	{
+      "type": "image_picker",
+      "id": "ap_banner_silk",
+      "label": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

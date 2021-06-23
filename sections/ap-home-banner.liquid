@@ -1,0 +1,49 @@
+<div class="container-fluid p-0 bg-banner-color">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{section.settings.banner_image | img_url: '', crop: 'center'}}">
+    </div>
+    <div class="col-md-6 blnkt-hdie-hdng text-center">
+      <h1>{{section.settings.hdng_txt}}</h1>
+      <a href="{{section.settings.btn_link}}"><button class="shop-now-btn">{{section.settings.btn_name}}</button></a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "HOME BANNER",
+    "settings": [
+	{
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Upload Banner Image"
+    },
+	{
+	  "type": "text",
+      "id": "hdng_txt",
+      "label": "Heading"
+	},
+	{
+	  "type": "text",
+      "id": "btn_name",
+      "label": "button name"
+	},
+	{
+	  "type": "url",
+      "id": "btn_link",
+      "label": "Url"
+	}
+	],
+  "presets": [{
+    "name": "HOME BANNER",
+    "category": "Custom Sections"
+  }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

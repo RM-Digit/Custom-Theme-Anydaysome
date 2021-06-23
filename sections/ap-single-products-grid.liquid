@@ -1,0 +1,81 @@
+<div class="container-fluid mwpl-grid">
+    
+          {% assign count = 1 %}
+          {% for block in section.blocks %}
+          {% assign evens = count | modulo: 2 %}
+          <div class="row d-flex justify-content-center {% if evens == 0 %}flex-row flex-md-row-reverse flex-lg-row-reverse {% endif %}">
+            <div class="col-12 col-sm-10 col-md-6 left d-flex align-items-center mb-order-2">
+              <!--  flex-row flex-md-row-reverse flex-lg-row-reverse -->
+              <div class="inner">
+                
+                <h4 class="ap-grid-sub-hdng">
+                  {{ block.settings.grid_sub_hdng }}
+                </h4>
+                
+                <h2 class="ap-grid-hdng">
+                  {{ block.settings.grid_hdng }}
+                </h2>
+
+                <p class="ap-grid-para">
+                  {{ block.settings.grid_text }}
+                </p>
+                
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-10 col-md-6 mwpl-grid-hero mb-order-1" style="background-image:url({{ block.settings.grid_hero | img_url: "" }})">
+<!--               <img src="{{ block.settings.grid_hero | img_url: "large" }}"> -->
+            </div>
+          </div>
+           {% assign count = count | plus: 1 %}
+          {% endfor %}
+</div>
+
+
+
+{% schema %}
+  {
+  "name": "Product Grid",
+  "settings": [
+	
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+    	{
+          "type": "text",
+          "id": "grid_hdng",
+          "label": "Header Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "grid_hero",
+          "label": "Grid Hero"
+        },
+		{
+          "type": "textarea",
+          "id": "grid_text",
+          "label": "Description"
+        },
+		{
+          "type": "text",
+          "id": "grid_sub_hdng",
+          "label": "Grid Sub Hdng"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Product Grid",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

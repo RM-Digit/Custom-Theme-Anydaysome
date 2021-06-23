@@ -1,0 +1,105 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      {% if section.settings.banner_silk %}
+      <div class="col-12">
+        <img src="{{ section.settings.banner_silk | img_url: '', crop: 'center' }}" class="w-100"> 
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    {% assign count = 1 %}
+    {% for block in section.blocks %}
+    {% assign evens = count | modulo: 2 %}
+    
+    <div id="ap-sec-0{{ count }}" class="row d-flex justify-content-center mt-4 {% if evens == 0 %}flex-row flex-md-row-reverse flex-lg-row-reverse {% endif %}">
+      <div class="col-12 col-sm-10 col-md-6 d-flex align-items-center justify-content-center">
+        <img src="{{ block.settings.cntnt_img_silk | img_url: '', crop: 'center' }}" >
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-6 d-flex align-items-center mt-4 mt-md-0 ap-grid-sct">
+        <div class="inner">
+          <h2 class="ap-grid-hdng mb-3">
+            {{ block.settings.cntnt_hdng_silk }}
+          </h2>
+
+          <h2 class="ap_h2Hdng">
+            {{ block.settings.cntnt_desc_silk }}
+          </h2>
+          
+          <p>
+            <a class="ap-btn" href="{{ block.settings.btn_url_silk }}">
+            	{{ block.settings.btn_name_silk }}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    {% assign count = count | plus: 1 %}
+    {% endfor %}
+    
+    
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Silk Strech",
+  "settings": [
+  {
+	"type": "image_picker",
+    "id": "banner_silk",
+    "label": "Heading"
+  }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "cntnt_img_silk",
+          "label": "Upload Icon"
+        },
+		{
+          "type": "text",
+          "id": "cntnt_hdng_silk",
+          "label": "Heading"
+        },
+		{
+          "type": "textarea",
+          "id": "cntnt_desc_silk",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "btn_name_silk",
+          "label": "Button Name"
+        },
+        {
+          "type": "url",
+          "id": "btn_url_silk",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Silk Strech",
+    "category": "Custom Sections"
+  }]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

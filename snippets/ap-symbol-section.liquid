@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12">
+        <div class="inner text-center">
+          <h1 class="ap-product-icon-hdng">
+          {{ section.settings.symbol_head_block }}
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center ap-icon-box">
+    {% for block in section.blocks %}
+      {% if block.type == "symbol-section" %}
+      <div class="col-4 col-sm-4 col-md-4 d-flex p-0">
+        <!--  flex-row flex-md-row-reverse flex-lg-row-reverse -->
+        <div class="inner text-center">
+          {% if block.settings.symbol_icon %}
+            <div class="ap-img-box">
+              <img src="{{ block.settings.symbol_icon | img_url: "large" }}" class="ap-product-icon">
+            </div>
+          {% endif %}
+            {{ block.settings.ap_hdng_block }}
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}  
+    </div>
+</div>

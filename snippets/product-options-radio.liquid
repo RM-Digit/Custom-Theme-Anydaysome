@@ -1,0 +1,65 @@
+{% unless product.options.size == 1 and product.variants[0].title == 'Default Title' %}
+{% for option in product.options_with_values %}
+{% assign option_index = forloop.index0 %}
+<div class="inline-field-wrapper js-required">
+  <span class="input-field-title">{{ option.name }}: <span class="{% if option.name == "Size" %} pk-selected-size {% elsif option.name == "Color" %} pk-selected-color {% elsif option.name == "Second Color" %} pk-selected-color2 {% endif %}"></span> {% if option.name == "Size" %}<a href="https://www.anydaycasual.com/pages/size-chart" class="ap-tab-link">Find My Fit</a>{% endif %}</span>
+  {% for value in option.values %}
+  {%- capture option_id -%}
+  single-option-{{ form_id }}-{{ option_index }}-{{ forloop.index0 }}
+  {%- endcapture -%}
+  <label
+         class="input-checkbox-wrapper"
+         for="{{ option_id }}">
+
+    <input
+           class="input-checkbox"
+           type="radio"
+           value="{{ value | escape }}"
+           {% if option.selected_value == value %}checked{% endif %}
+           name="option-{{ option_index }}"
+           id="{{ option_id }}"
+           data-option-index="{{ option_index }}"
+           data-option-input="{{ form_id }}">
+
+    <span class="input-checkbox-title {% if value == 'Black' %} pk-black {% elsif value == "White" %} pk-white {% elsif value == "Birch" %} pk-birch {% endif %} ">{% if value == 'Black' %}  {% elsif value == "White" %}  {% elsif value == "Birch" %} {% else %}{{ value }} {% endif %}</span>
+  </label>
+
+  {% endfor %}
+</div>
+
+{% endfor %}
+{% endunless %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>  
+  $(document).ready(function(){
+    $("input[type=radio][name=option-0]").change(function(){
+
+      if( $(this).is(":checked") ){
+        var selected_value = $(this).val();
+        $('.pk-selected-size').html(selected_value);
+      }
+      else{
+         $('.pk-selected-size').html(S);
+      }
+    });
+    
+    $("input[type=radio][name=option-1]").change(function(){
+
+      if( $(this).is(":checked") ){
+        var selected_value = $(this).val();
+        $('.pk-selected-color').html(selected_value);
+      }
+      else{
+         $('.pk-selected-size').html(Black);
+      }
+    });
+    $("input[type=radio][name=option-2]").change(function(){
+
+      if( $(this).is(":checked") ){
+        var selected_value = $(this).val();
+        $('.pk-selected-color2').html(selected_value);
+      }
+    });
+  }); 
+
+</script>

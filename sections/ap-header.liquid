@@ -1,0 +1,161 @@
+<header class="ap-header ">
+  {% if section.settings.show_top_bar == true %}
+  <div class="container-fluid" style="background-color: {{section.settings.color_heading }}; color:{{section.settings.color_text }};">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ap-top-bar py-2">
+
+          <span class="header-promotion-text">{{ section.settings.top_cnt }}</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif%}
+  <div class="container-fluid ap-navbar py-3 {% if section.settings.header_sticky == true %} ap-sticky-header{% endif %}">
+    <div class="container px-0">
+      <div class="row  d-flex justify-content-center">
+        <div class="col-3 col-md-4 col-lg-5 col-xl-5 ap-nav-menu left">
+          {% if section.settings.menu_left%}
+          {% include 'left-nav', style: 'below-header'%}
+          {% endif %}
+
+
+          <span class="ap-toggler d-lg-none">
+            <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/open-menu.png?v=1599212656">
+          </span>
+        </div>
+        <div class="col-5 col-md-4 col-lg-2 col-xl-2 ap-nav-logo">
+          {% if section.settings.logo%}
+          <a href="/" class="m-auto "><img src="{{ section.settings.logo | img_url: '', crop: 'center'}}"></a>
+          {% endif %}
+        </div>
+
+        <div class="col-3 col-md-4 col-lg-5 col-xl-5">
+          <div class="row">
+            <div class="col-lg-9 col-xl-9 ap-nav-menu right">
+              {% if section.settings.menu_right%}
+              {% include 'right-nav', style: 'below-header'%}
+              {% endif %}
+            </div>
+            <div class="col-lg-3 col-xl-3 ap-nav-icon p-lg-0 d-lg-flex align-items-center">
+              {% unless password_page %}
+              <div class="header-tools">
+                {% if section.settings.menu_style == 'header' %}
+                {% include 'navigation', style: 'header' %}
+                {% endif %}
+
+                <div class="header-actions d-lg-flex">
+                  <div id="coin-container"></div>
+                  {% if section.settings.show_search %}
+                  <span class="header-search-toggle pr-0"><img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/search.png"></span>
+                  {% endif %}
+                  {% if shop.customer_accounts_enabled %}
+                  <a href="{{ routes.account_url }}" class="account-link pr-0"><img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/user.png"></a>
+                  {% endif %}
+                  {% if section.settings.show_cart %}
+                  <a class="cart-link" href="{{ routes.cart_url }}"><img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/supermarket.png"><span class="cart-count">{{ cart.item_count }}</span></a>  <!------ <span class="cart-count">{{ cart.item_count }}</span>------>
+                  {% endif %}
+                </div>
+              </div>
+              {% endunless %}
+            </div>
+          </div>
+        </div>
+
+
+        <div class="ap-mobile-menu d-lg-none">
+          <img src="https://cdn.shopify.com/s/files/1/0457/8698/8697/files/close.png?v=1599213707" class="ap-close-toggler">
+
+          {% if section.settings.menu_left%}
+          {% include 'left-nav', style: 'below-header'%}
+          {% endif %}
+
+          {% if section.settings.menu_right%}
+          {% include 'right-nav', style: 'below-header'%}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header> 
+
+{% schema %}
+  {
+    "name": "Header Section",
+    "settings": [
+	{
+      "type": "checkbox",
+      "id": "header_sticky",
+      "label": "Enable sticky header"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cart",
+      "label": "Show cart icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "Show search icon",
+      "default": true
+    },
+	{
+		"type": "header",
+		"content": "Top Bar"
+	},
+	{
+		"type": "checkbox",
+		"id": "show_top_bar",
+		"label": "Show Top Bar"
+	},
+	{
+      "type": "color",
+      "id": "color_heading",
+      "label": "Select Backgorund Color",
+      "default": "#484a47"
+    },
+	{
+      "type": "color",
+      "id": "color_text",
+      "label": "Select Text Color",
+      "default": "#ffffff"
+    },
+	{
+		"type": "textarea",
+		"id": "top_cnt",
+		"label": "Top Bar Content"
+	},
+	{
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_left",
+      "label": "Left side Menu"
+    },
+	{
+      "type": "link_list",
+      "id": "menu_right",
+      "label": "Right Side Menu"
+    },
+	{
+      "type": "header",
+      "content": "Logo"
+    },
+	{
+      "type": "image_picker",
+      "id": "logo",
+	  "label": "Logo image"
+    }
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
